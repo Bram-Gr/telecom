@@ -1,0 +1,6 @@
+@SkillstormTelecom_HostAddress = http://localhost:5066
+
+GET {{SkillstormTelecom_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
