@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillstormTelecom", "SkillstormTelecom.csproj", "{229B7BAD-48E8-414F-BEF4-F4057057F6C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillstormTelecom", "SkillstormTelecom.csproj", "{229B7BAD-48E8-414F-BEF4-F4057057F6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "..\Entities\Entities.csproj", "{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "..\Contracts\Contracts.csproj", "{24259BAC-6ABB-4388-BC0B-05D3FE1850BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\Repository\Repository.csproj", "{5C20F5AF-28A2-466D-8254-A54347BF5F3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{229B7BAD-48E8-414F-BEF4-F4057057F6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{229B7BAD-48E8-414F-BEF4-F4057057F6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{229B7BAD-48E8-414F-BEF4-F4057057F6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24259BAC-6ABB-4388-BC0B-05D3FE1850BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24259BAC-6ABB-4388-BC0B-05D3FE1850BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24259BAC-6ABB-4388-BC0B-05D3FE1850BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24259BAC-6ABB-4388-BC0B-05D3FE1850BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C20F5AF-28A2-466D-8254-A54347BF5F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C20F5AF-28A2-466D-8254-A54347BF5F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C20F5AF-28A2-466D-8254-A54347BF5F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C20F5AF-28A2-466D-8254-A54347BF5F3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

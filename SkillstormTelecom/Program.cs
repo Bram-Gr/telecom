@@ -15,6 +15,16 @@ builder.Services.AddControllers();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+//Exception handling
+//Hsts
+//HttpsRedirection
+//StaticFiles
+//Routing
+//Cors
+//Authentication
+//Authorization
+//Custom Middleware
+//Endpoints
 
 if (app.Environment.IsDevelopment())
 {

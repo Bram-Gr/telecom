@@ -129,3 +129,4 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\obj\Debug\net8.0\SkillstormTelecom.csproj.AssemblyReference.cache
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\obj\Debug\net8.0\Skillsto.2CBDAD69.Up2Date
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\obj\Debug\net8.0\SkillstormTelecom.sourcelink.json
