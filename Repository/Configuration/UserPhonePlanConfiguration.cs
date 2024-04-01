@@ -13,11 +13,15 @@ namespace Repository.Configuration
     {
         public void Configure(EntityTypeBuilder<UserPhonePlan> builder)
         {
-         /*   builder.HasData(
-
-
+/*            builder.HasData(
+                new UserPhonePlan
+                {
+                    UserID = 
+                    PlanID = 
+                }
+                
+                
                 );*/
-
         }
     }
 }

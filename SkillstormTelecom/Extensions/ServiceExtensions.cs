@@ -1,4 +1,9 @@
-﻿namespace SkillstormTelecom.Extensions
+﻿using Repository;
+using Microsoft.EntityFrameworkCore;
+
+
+
+namespace SkillstormTelecom.Extensions
 {
     public static class ServiceExtensions
     {
@@ -19,5 +24,10 @@
               //  options.ForwardClientCertificate = false;
               //  options.ForwardWindowsAuthentication = false;
             });
+
+        public static void ConfigureSqlContent(this IServiceCollection services, IConfiguration configuration) =>
+            services.AddDbContext<RepositoryContext>(options =>
+                           options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+                                           
     }
 }

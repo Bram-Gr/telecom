@@ -130,3 +130,9 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\obj\Debug\net8.0\SkillstormTelecom.csproj.AssemblyReference.cache
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\obj\Debug\net8.0\Skillsto.2CBDAD69.Up2Date
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\obj\Debug\net8.0\SkillstormTelecom.sourcelink.json
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Contracts.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Entities.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Repository.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Repository.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Contracts.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Entities.pdb

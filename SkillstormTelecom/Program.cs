@@ -1,5 +1,7 @@
 using SkillstormTelecom.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.Extensions.Options;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,7 @@ builder.Services.ConfigureCors();
 
 builder.Services.ConfigureIISIntegration();
 
-builder.Services.AddControllers();
+builder.Services.ConfigureSqlContent(builder.Configuration);
 
 
 var app = builder.Build();
