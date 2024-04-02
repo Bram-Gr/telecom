@@ -17,7 +17,7 @@ namespace SkillstormTelecom.ContextFactory
 
             var builder = new DbContextOptionsBuilder<RepositoryContext>()
             .UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
-            builder => builder.MigrationsAssembly("TelecomDb"));
+                builder => builder.MigrationsAssembly("SkillstormTelecom"));
 
             return new RepositoryContext(builder.Options);
 

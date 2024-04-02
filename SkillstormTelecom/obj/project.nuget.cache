@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DoOkLlQU4GCie1nf7y+gYgm1/QXhFiMpAyNhPnx+U2hlWTAeSBPn/vjfM8uEuE/CZPPTM3zRGYdufYHHYgwfQQ==",
+  "dgSpecHash": "gDfEUNV6595x+3FlfxlEhhM2Jf2JdnuliZMLXp5ar4Oxcg/CA6iRrmWHVviwIy2/5RdFNOmGwWLCxZ5dNvkCdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\SkillstormTelecom.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,9 @@
     "C:\\Users\\b93ra\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\b93ra\\.nuget\\packages\\nlog\\5.2.8\\nlog.5.2.8.nupkg.sha512",
+    "C:\\Users\\b93ra\\.nuget\\packages\\nlog.extensions.logging\\5.3.8\\nlog.extensions.logging.5.3.8.nupkg.sha512",
+    "C:\\Users\\b93ra\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.8\\nlog.web.aspnetcore.5.3.8.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",

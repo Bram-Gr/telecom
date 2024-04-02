@@ -25,6 +25,8 @@ namespace Entities
         [Column("Other bill details")]
         public string? OtherBillDetails { get; set; }   
 
+
+
     }
 }
 /*Bill table:

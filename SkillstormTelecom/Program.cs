@@ -1,9 +1,17 @@
 using SkillstormTelecom.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using SkillstormTelecom;
+using NLog;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+LogManager.Setup().LoadConfigurationFromFile(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
 // Add services to the container.
 
@@ -11,7 +19,17 @@ builder.Services.ConfigureCors();
 
 builder.Services.ConfigureIISIntegration();
 
+/*builder.Sevice.ConfigureServiceManager();*/
+
 builder.Services.ConfigureSqlContent(builder.Configuration);
+
+/*builder.Services.AddExceptionHandler<GlobalExceptionHandler>();*/ //throws error
+
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 
 
 var app = builder.Build();
@@ -48,8 +66,8 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 app.UseCors("CorsPolicy");
 
-app.UseAuthorization();
+/*app.UseAuthorization();*/ //throws error
 
-app.MapControllers();
+/*app.MapControllers();*/   //throws error
 
 app.Run();

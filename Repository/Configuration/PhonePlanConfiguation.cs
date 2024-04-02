@@ -17,7 +17,7 @@ namespace Repository.Configuration
             builder.HasData(
                 new PhonePlan
                 {
-                    Id = Guid.NewGuid(),
+                    Id = new Guid("05444900-9AC7-4DD5-B69F-221C098A1493"),
                     PlanName = "Unlimited Talk and Text",
                     DeviceLimit = 1,
                     Price = 50.00,
@@ -25,7 +25,7 @@ namespace Repository.Configuration
                 },
                 new PhonePlan
                 {
-                    Id = Guid.NewGuid(),
+                    Id = new Guid("A0233ACC-383C-4A9E-B867-34D7BA382512"),
                     PlanName = "Unlimited Everything",
                     DeviceLimit = 2,
                     Price = 75.00,
@@ -33,7 +33,7 @@ namespace Repository.Configuration
                 },
                 new PhonePlan
                 {
-                    Id = Guid.NewGuid(),
+                    Id = new Guid("319CF1F0-AB87-4A64-845F-9B873A547872"),
                     PlanName = "Basic Plan",
                     DeviceLimit = 1,
                     Price = 25.00,
@@ -41,7 +41,7 @@ namespace Repository.Configuration
                 },
                 new PhonePlan
                 {
-                    Id = Guid.NewGuid(),
+                    Id = new Guid("2D2F6606-6325-4E26-9C54-E8EB44521E85"),
                     PlanName = "Family Plan",
                     DeviceLimit = 4,
                     Price = 100.00,

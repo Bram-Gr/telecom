@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Entities"
   ],
-  "SelectedNode": "\\SkillstormTelecom.sln",
+  "SelectedNode": "\\Entities\\Bill.cs",
   "PreviewInSolutionExplorer": false
 }

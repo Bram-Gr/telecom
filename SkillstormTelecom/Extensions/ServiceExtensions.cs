@@ -25,6 +25,9 @@ namespace SkillstormTelecom.Extensions
               //  options.ForwardWindowsAuthentication = false;
             });
 
+       /* public static void ConfigureServiceManager(this IServiceCollection services) =>
+            services.AddSingleton<IServiceManager, ServiceManager>();*/
+
         public static void ConfigureSqlContent(this IServiceCollection services, IConfiguration configuration) =>
             services.AddDbContext<RepositoryContext>(options =>
                            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));

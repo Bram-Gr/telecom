@@ -1,4 +1,5 @@
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\bin\Debug\net8.0\Contracts.deps.json
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\bin\Debug\net8.0\Contracts.runtimeconfig.json
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\bin\Debug\net8.0\Contracts.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\bin\Debug\net8.0\Contracts.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\bin\Debug\net8.0\Entities.dll
@@ -13,4 +14,5 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\obj\Debug\net8.0\Contr
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\obj\Debug\net8.0\Contracts.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\obj\Debug\net8.0\refint\Contracts.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\obj\Debug\net8.0\Contracts.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\obj\Debug\net8.0\Contracts.genruntimeconfig.cache
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Contracts\obj\Debug\net8.0\ref\Contracts.dll
