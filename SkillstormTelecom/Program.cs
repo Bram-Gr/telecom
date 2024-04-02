@@ -23,6 +23,8 @@ builder.Services.ConfigureIISIntegration();
 
 builder.Services.ConfigureSqlContent(builder.Configuration);
 
+/*builder.Services.AddAutoMapper(typeof(Program));*/
+
 /*builder.Services.AddExceptionHandler<GlobalExceptionHandler>();*/ //throws error
 
 

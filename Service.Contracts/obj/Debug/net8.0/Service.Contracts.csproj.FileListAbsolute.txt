@@ -1,0 +1,16 @@
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\bin\Debug\net8.0\Service.Contracts.deps.json
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\bin\Debug\net8.0\Service.Contracts.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\bin\Debug\net8.0\Service.Contracts.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\bin\Debug\net8.0\Entities.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\bin\Debug\net8.0\Entities.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service.Contracts.csproj.AssemblyReference.cache
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service.Contracts.AssemblyInfoInputs.cache
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service.Contracts.AssemblyInfo.cs
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service.Contracts.sourcelink.json
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service..DEC3DE55.Up2Date
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service.Contracts.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\refint\Service.Contracts.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\Service.Contracts.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Service.Contracts\obj\Debug\net8.0\ref\Service.Contracts.dll
