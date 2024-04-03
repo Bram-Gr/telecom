@@ -1,3 +1,7 @@
 # Ignore Visual Studio FileContentIndex folder
 .vs/SkillstormTelecom/FileContentIndex/
 
+# Ignore appsettings.json file
+appsettings
+
+appsettings.json
