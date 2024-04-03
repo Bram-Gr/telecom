@@ -8,11 +8,11 @@ namespace Contracts
 {
     internal interface IRepositoryManager
     {
-     /*   IUserPhonePlanRepository userPhonePlanRepository { get; }
+        IUserPhonePlanRepository userPhonePlanRepository { get; }
         IUserRepository User { get; }
         IPhonePlanRepository PhonePlan { get; }
         IDeviceRepository Device { get; }
-        IBillRepository Bill { get; }*/
+        IBillRepository Bill { get; }
         Task SaveAsync();
     }
 }
