@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Service.Contracts
 {
-    public interface IUserPhonePlan
+    public interface IUserPhonePlanService
     {
 
     }

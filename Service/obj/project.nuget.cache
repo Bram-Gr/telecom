@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "qoncsbosT2Nf5WyZvcLPA1W0cIfcnXPYyUdxUv+FILRzGEoVIMbIJmYu5tWQcY4/obKmM1o0l2abtGeP7XL+yA==",
+  "dgSpecHash": "qafnqh96cNFuPvWBuT4Q3P2oOnrL6vW+Nnc9PDoRfGR1Iu4wRpqo1Lkb+SE0EO6qHimgNsk0mKKUwc6PZQ7r1g==",
   "success": true,
   "projectFilePath": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\Service.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\b93ra\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\b93ra\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\b93ra\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\b93ra\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "C:\\Users\\b93ra\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
