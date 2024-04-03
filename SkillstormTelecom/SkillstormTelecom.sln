@@ -13,9 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "..\LoggerManager.cs\LoggerService.csproj", "{B4D7573B-1582-46EB-B35E-13AE89BE60B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "..\Service\Service.csproj", "{392F98A5-7130-4ABE-8A35-667B76ECB45F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "..\Service\Service.csproj", "{392F98A5-7130-4ABE-8A35-667B76ECB45F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Contracts", "..\Service.Contracts\Service.Contracts.csproj", "{5CCC9CC2-7324-4645-BF36-658DC54F6495}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Contracts", "..\Service.Contracts\Service.Contracts.csproj", "{5CCC9CC2-7324-4645-BF36-658DC54F6495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "..\Shared\Shared.csproj", "{8CB64ADE-1A7C-4896-B9DB-BEEA95431B4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillstormTelecom.Presentation", "..\SkillstormTelecom.Presentation\SkillstormTelecom.Presentation.csproj", "{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{5CCC9CC2-7324-4645-BF36-658DC54F6495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CCC9CC2-7324-4645-BF36-658DC54F6495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CCC9CC2-7324-4645-BF36-658DC54F6495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB64ADE-1A7C-4896-B9DB-BEEA95431B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB64ADE-1A7C-4896-B9DB-BEEA95431B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB64ADE-1A7C-4896-B9DB-BEEA95431B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB64ADE-1A7C-4896-B9DB-BEEA95431B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
