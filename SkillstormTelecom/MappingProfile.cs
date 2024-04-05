@@ -10,6 +10,7 @@ namespace SkillstormTelecom
         public MappingProfile()
         {
             CreateMap<Device, DeviceDto>();
+            CreateMap<DeviceForCreationDto, Device>();
             CreateMap<User, UserDto>();
        
         }

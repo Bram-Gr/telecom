@@ -15,6 +15,8 @@ namespace Repository
         {
         }
 
+        public void CreateDevice(Device device) => Create(device);
+
         public async Task<IEnumerable<Device>> GetAllDevicesAsync(Guid UserID, bool trackChanges) =>
             await FindByCondition(d => d.UserID.Equals(UserID), trackChanges).ToListAsync();
 
