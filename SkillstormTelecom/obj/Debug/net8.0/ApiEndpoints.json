@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.DeviceController",
+    "Method": "GetDevicesByUserId",
+    "RelativePath": "api/user/{Id}/device",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

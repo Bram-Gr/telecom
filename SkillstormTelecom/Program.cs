@@ -1,10 +1,10 @@
+using SkillstormTelecom;
 using SkillstormTelecom.Extensions;
-using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.Extensions.Options;
+using Contracts;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Options;
-using SkillstormTelecom;
 using NLog;
 
 
@@ -16,22 +16,26 @@ LogManager.Setup().LoadConfigurationFromFile(string.Concat(Directory.GetCurrentD
 // Add services to the container.
 
 builder.Services.ConfigureCors();
-
 builder.Services.ConfigureIISIntegration();
-
-/*builder.Sevice.ConfigureServiceManager();*/
-
-builder.Services.ConfigureSqlContent(builder.Configuration);
-
-/*builder.Services.AddAutoMapper(typeof(Program));*/
-
-/*builder.Services.AddExceptionHandler<GlobalExceptionHandler>();*/ //throws error
-
-
+/*builder.Services.ConfigureLoggerService();*/
+builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigureServiceManager();
+builder.Services.ConfigureSqlContext(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(Program));
+/*builder.Services.AddExceptionHandler<GlobalExceptionHandler>();*/
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
+
+
+builder.Services.AddControllers(config =>
+{
+    config.RespectBrowserAcceptHeader = true;
+    config.ReturnHttpNotAcceptable = true;
+}).AddXmlDataContractSerializerFormatters()
+    .AddApplicationPart(
+    typeof(SkillstormTelecom.Presentation.AssemblyReference).Assembly);
 
 
 var app = builder.Build();
@@ -68,8 +72,8 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 app.UseCors("CorsPolicy");
 
-/*app.UseAuthorization();*/ //throws error
+app.UseAuthorization(); //throws error
 
-/*app.MapControllers();*/   //throws error
+app.MapControllers();   //throws error
 
 app.Run();

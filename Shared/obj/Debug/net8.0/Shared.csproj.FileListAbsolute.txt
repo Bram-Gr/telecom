@@ -10,3 +10,7 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\Shared\obj\Debug\net8.0\Shared.d
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Shared\obj\Debug\net8.0\refint\Shared.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Shared\obj\Debug\net8.0\Shared.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Shared\obj\Debug\net8.0\ref\Shared.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Shared\bin\Debug\net8.0\Entities.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Shared\bin\Debug\net8.0\Entities.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Shared\obj\Debug\net8.0\Shared.csproj.AssemblyReference.cache
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Shared\obj\Debug\net8.0\Shared.csproj.Up2Date

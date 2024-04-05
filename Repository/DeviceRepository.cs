@@ -15,12 +15,10 @@ namespace Repository
         {
         }
 
-        public Task<IEnumerable<Device>> GetAllDevicesAsync(Guid userId, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<IEnumerable<Device>> GetAllDevicesAsync(Guid UserID, bool trackChanges) =>
+            await FindByCondition(d => d.UserID.Equals(UserID), trackChanges).ToListAsync();
 
-        public Task<Device> GetDeviceAsync(Guid userId, Guid id, bool trackChanges)
+        public Task<Device> GetDeviceAsync(Guid userId, bool trackChanges)
         {
             throw new NotImplementedException();
         }

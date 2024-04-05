@@ -46,7 +46,7 @@ namespace SkillstormTelecom.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Bills");
+                    b.ToTable("Bills", (string)null);
 
                     b.HasData(
                         new
@@ -98,7 +98,7 @@ namespace SkillstormTelecom.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Devices");
+                    b.ToTable("Devices", (string)null);
 
                     b.HasData(
                         new
@@ -171,7 +171,7 @@ namespace SkillstormTelecom.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PhonePlans");
+                    b.ToTable("PhonePlans", (string)null);
 
                     b.HasData(
                         new
@@ -235,7 +235,7 @@ namespace SkillstormTelecom.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
 
                     b.HasData(
                         new
@@ -271,7 +271,7 @@ namespace SkillstormTelecom.Migrations
 
                     b.HasKey("UserID", "PlanID");
 
-                    b.ToTable("UserPhonePlans");
+                    b.ToTable("UserPhonePlans", (string)null);
 
                     b.HasData(
                         new

@@ -16,3 +16,5 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\o
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\refint\SkillstormTelecom.Presentation.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\SkillstormTelecom.Presentation.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\ref\SkillstormTelecom.Presentation.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Shared.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Shared.pdb

@@ -1,5 +1,8 @@
 ﻿using Repository;
 using Microsoft.EntityFrameworkCore;
+using Contracts;
+using Service.Contracts;
+using Service;
 
 
 
@@ -25,10 +28,16 @@ namespace SkillstormTelecom.Extensions
               //  options.ForwardWindowsAuthentication = false;
             });
 
-       /* public static void ConfigureServiceManager(this IServiceCollection services) =>
-            services.AddSingleton<IServiceManager, ServiceManager>();*/
+  /*      public static void ConfigureLoggerService(this IServiceCollection services) =>
+            services.AddSingleton<ILoggerManager, LoggerManager>();*/
 
-        public static void ConfigureSqlContent(this IServiceCollection services, IConfiguration configuration) =>
+        public static void ConfigureRepositoryManager(this IServiceCollection services) =>
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
+
+        public static void ConfigureServiceManager(this IServiceCollection services) =>
+            services.AddScoped<IServiceManager, ServiceManager>();
+
+        public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration) =>
             services.AddDbContext<RepositoryContext>(options =>
                            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
                                            

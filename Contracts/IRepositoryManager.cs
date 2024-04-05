@@ -8,7 +8,7 @@ namespace Contracts
 {
     public interface IRepositoryManager
     {
-        IUserPhonePlanRepository userPhonePlanRepository { get; }
+        IUserPhonePlanRepository UserPhonePlan { get; }
         IUserRepository User { get; }
         IPhonePlanRepository PhonePlan { get; }
         IDeviceRepository Device { get; }
