@@ -47,13 +47,15 @@ namespace Repository.Configuration
                   {
                         Id = new Guid("E7FC1146-5BE0-4B3E-8DB2-846D5B954AE6"),
                         PhoneNumber = "555-555-5889",
-                        UserID = new Guid("12AE765A-189B-4194-81E6-0B4046F32853")
+                        UserID = new Guid("12AE765A-189B-4194-81E6-0B4046F32853"),
+                        PlanID = new Guid("A0233ACC-383C-4A9E-B867-34D7BA382512")
                   },
                   new Device
                   {
                         Id = new Guid("AB2072B6-32B1-4CA4-AEAC-8BF4AFAE0088"),
                         PhoneNumber = "555-555-5890",
-                        UserID = new Guid("2A4425E8-F6BF-4D34-9C8D-5236751F7635")
+                        UserID = new Guid("2A4425E8-F6BF-4D34-9C8D-5236751F7635"),
+                        PlanID = new Guid("319CF1F0-AB87-4A64-845F-9B873A547872")
                   }
                 );
         }

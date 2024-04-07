@@ -15,14 +15,15 @@ namespace Repository
         {
         }
 
-        public Task<IEnumerable<Device>> GetAllDevicesAsync(Guid userId, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        public void CreateDevice(Device device) => Create(device);
 
-        public Task<Device> GetDeviceAsync(Guid userId, Guid id, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<IEnumerable<Device>> GetAllDevicesAsync(Guid UserID, bool trackChanges) =>
+            await FindByCondition(d => d.UserID.Equals(UserID), trackChanges).ToListAsync();
+
+        public Task<Device> GetDeviceAsync(Guid deviceId, bool trackChanges)=>
+           FindByCondition(d => d.Id.Equals(deviceId), trackChanges).SingleOrDefaultAsync();
+        
+
+        public void DeleteDevice(Device device) => Delete(device);
     }
 }

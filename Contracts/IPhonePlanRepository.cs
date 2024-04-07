@@ -9,7 +9,7 @@ namespace Contracts
 {
     public interface IPhonePlanRepository
     {
-        Task<IEnumerable<PhonePlan>> GetAllPhonePlansAsync(Guid userId, bool trackChanges);
-        Task<PhonePlan> GetPhonePlanAsync(Guid userId, Guid id, bool trackChanges);
+        Task<IEnumerable<PhonePlan>> GetAllPhonePlans(bool trackChanges);
+        Task<PhonePlan> GetPhonePlanByIdAsync(Guid id, bool trackChanges);
     }
 }

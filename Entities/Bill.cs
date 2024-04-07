@@ -23,7 +23,10 @@ namespace Entities
         public DateTime BillingDate { get; set; }
 
         [Column("Other bill details")]
-        public string? OtherBillDetails { get; set; }   
+        public string? OtherBillDetails { get; set; }
+
+        [Column("BillingAddress")]
+        public string? BillingAddress { get; set; }
 
 
 

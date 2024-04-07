@@ -10,6 +10,8 @@ namespace Contracts
     public interface IDeviceRepository
     {
         Task<IEnumerable<Device>> GetAllDevicesAsync(Guid userId, bool trackChanges);
-        Task<Device> GetDeviceAsync(Guid userId, Guid id, bool trackChanges);
+        void CreateDevice(Device device);
+        void DeleteDevice(Device device);
+        Task<Device> GetDeviceAsync(Guid deviceId, bool trackChanges);
     }
 }
