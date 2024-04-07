@@ -11,6 +11,7 @@ namespace Service.Contracts
     public interface IDeviceService
     {
         Task<IEnumerable<DeviceDto>> GetDevicesByUserIdAsync(Guid userId,bool trackChanges);
-        Task<DeviceDto> addDeviceByPlan(DeviceForCreationDto device, PhonePlan phone );
+        Task<DeviceDto> addDeviceByPlanAsync(DeviceForCreationDto device, Guid planId);
+        Task DeleteDeviceAsync(Guid deviceId, bool trackChanges);
     }
 }

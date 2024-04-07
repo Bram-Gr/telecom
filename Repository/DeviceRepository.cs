@@ -20,9 +20,10 @@ namespace Repository
         public async Task<IEnumerable<Device>> GetAllDevicesAsync(Guid UserID, bool trackChanges) =>
             await FindByCondition(d => d.UserID.Equals(UserID), trackChanges).ToListAsync();
 
-        public Task<Device> GetDeviceAsync(Guid userId, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        public Task<Device> GetDeviceAsync(Guid deviceId, bool trackChanges)=>
+           FindByCondition(d => d.Id.Equals(deviceId), trackChanges).SingleOrDefaultAsync();
+        
+
+        public void DeleteDevice(Device device) => Delete(device);
     }
 }

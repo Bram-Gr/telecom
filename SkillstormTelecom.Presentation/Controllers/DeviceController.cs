@@ -1,13 +1,15 @@
-﻿using Shared.DataTransferObjects;
-using Service.Contracts;
-using Microsoft.AspNetCore.JsonPatch;
+﻿using Entities;
 using Microsoft.AspNetCore.Mvc;
-
+using Service.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace SkillstormTelecom.Presentation.Controllers
 {
-    [Route("api/user/{UserId:guid}/device")]
-    /*   [Route("api/[controller]")]*/
+    [Route("api/device/{deviceId:guid}")]
     [ApiController]
     public class DeviceController: ControllerBase
     {
@@ -15,15 +17,12 @@ namespace SkillstormTelecom.Presentation.Controllers
         public DeviceController(IServiceManager userService) =>
             _service = userService;
 
-        /*   [HttpGet("{UserID:guid}")]*/
-        [HttpGet]
-        public async Task<IActionResult> GetDevicesByUserId(Guid userId)
+        [HttpDelete]
+        public async Task<IActionResult> DeleteDevice(Guid deviceId)
         {
-            Console.WriteLine(userId);
-            var devices = await _service.Device.GetDevicesByUserIdAsync(userId, trackChanges: false);
-            Console.WriteLine(userId);
-            return Ok(devices);
+            Console.WriteLine(deviceId);
+            await _service.Device.DeleteDeviceAsync(deviceId, trackChanges: false);
+            return NoContent();
         }
-
     }
 }

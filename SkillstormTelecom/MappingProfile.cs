@@ -12,7 +12,9 @@ namespace SkillstormTelecom
             CreateMap<Device, DeviceDto>();
             CreateMap<DeviceForCreationDto, Device>();
             CreateMap<User, UserDto>();
-       
+            CreateMap<PhonePlanDto, PhonePlan>();
+         
+
         }
   
     }

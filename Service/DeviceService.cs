@@ -35,16 +35,17 @@ namespace Service
             return devicesDtos;
         }
 
-        public async Task<DeviceDto> addDeviceByPlan(DeviceForCreationDto device, PhonePlan phonePlan)
+        public async Task<DeviceDto> addDeviceByPlanAsync(DeviceForCreationDto device, Guid planId)
         {
 
             // Retrieve devices associated with the user
             var userDevices = await _repositoryManager.Device.GetAllDevicesAsync(device.UserID, false);
+            var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, false);
 
             // Count the number of devices associated with the user
 
             int userDeviceCount = userDevices.Count(); 
-            if (userDeviceCount <= phonePlan.DeviceLimit)
+            if (userDeviceCount < phonePlan.DeviceLimit)
             {
                 var deviceEntity = _mapper.Map<Device>(device);
                 _repositoryManager.Device.CreateDevice(deviceEntity);
@@ -56,6 +57,17 @@ namespace Service
             {
                 throw new Exception("Exceeded Device Limit");
             }
+        }
+
+        public async Task DeleteDeviceAsync(Guid deviceId, bool trackChanges)
+        {
+            var device = await _repositoryManager.Device.GetDeviceAsync(deviceId, trackChanges);
+            if (device == null)
+            {
+                throw new Exception("Device not found");
+            }
+            _repositoryManager.Device.DeleteDevice(device);
+            await _repositoryManager.SaveAsync();
         }
 
     }

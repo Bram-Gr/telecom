@@ -1,6 +1,53 @@
 [
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.DeviceController",
+    "Method": "DeleteDevice",
+    "RelativePath": "api/device/{deviceId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.PhonePlanController",
+    "Method": "GetPhonePlans",
+    "RelativePath": "api/phoneplan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.PhonePlanController",
+    "Method": "AddDeviceByPlan",
+    "RelativePath": "api/phoneplan/{PlanId}/device",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "device",
+        "Type": "Shared.DataTransferObjects.DeviceForCreationDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "PlanId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
     "Method": "GetDevicesByUserId",
     "RelativePath": "api/user/{UserId}/device",
     "HttpMethod": "GET",
