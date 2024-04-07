@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkillstormTelecom")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e734bf3c62ed8a77aed0c3313365f3ce0f2f58e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13edb4e52cdf7b343dbfe6b0c43205d27284bd2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkillstormTelecom")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkillstormTelecom")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

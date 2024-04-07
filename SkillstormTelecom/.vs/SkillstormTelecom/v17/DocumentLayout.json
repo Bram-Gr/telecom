@@ -164,8 +164,7 @@
               "RelativeToolTip": "..\\Service\\PhonePlanService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:18:30.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:18:30.442Z"
             },
             {
               "$type": "Document",
@@ -177,8 +176,7 @@
               "RelativeToolTip": "..\\Service\\ServiceManager.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAYwBkAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T21:56:13.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T21:56:13.412Z"
             },
             {
               "$type": "Document",
@@ -190,8 +188,7 @@
               "RelativeToolTip": "..\\Service\\DeviceService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:18:29.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:18:29.839Z"
             },
             {
               "$type": "Document",
@@ -201,7 +198,7 @@
               "RelativeDocumentMoniker": "..\\Service\\BillService.cs",
               "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\BillService.cs",
               "RelativeToolTip": "..\\Service\\BillService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA9wBcAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowBcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T20:18:29.187Z",
               "EditorCaption": ""
@@ -216,8 +213,7 @@
               "RelativeToolTip": "..\\Service\\UserPhonePlanService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:18:31.167Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:18:31.167Z"
             },
             {
               "$type": "Document",
@@ -229,8 +225,7 @@
               "RelativeToolTip": "..\\Service\\UserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwBUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:18:31.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:18:31.951Z"
             },
             {
               "$type": "Document",
@@ -242,8 +237,7 @@
               "RelativeToolTip": "..\\Service.Contracts\\IServiceManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T21:59:28.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T21:59:28.858Z"
             },
             {
               "$type": "Document",
@@ -255,8 +249,7 @@
               "RelativeToolTip": "..\\Contracts\\IDeviceRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:27:14.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:27:14.791Z"
             },
             {
               "$type": "Document",
@@ -268,8 +261,7 @@
               "RelativeToolTip": "..\\Contracts\\IBillRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:27:16.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:27:16.037Z"
             },
             {
               "$type": "Document",
@@ -281,8 +273,7 @@
               "RelativeToolTip": "..\\Contracts\\IRepositoryManager.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T13:11:45.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T13:11:45.085Z"
             },
             {
               "$type": "Document",
@@ -294,8 +285,7 @@
               "RelativeToolTip": "..\\Service.Contracts\\IDeviceService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:14:49.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:14:49.047Z"
             },
             {
               "$type": "Document",
@@ -307,8 +297,7 @@
               "RelativeToolTip": "..\\Service.Contracts\\IBillService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:14:48.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:14:48.187Z"
             },
             {
               "$type": "Document",
@@ -320,8 +309,7 @@
               "RelativeToolTip": "..\\Repository\\DeviceRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:37:35.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:37:35.309Z"
             },
             {
               "$type": "Document",
@@ -333,8 +321,7 @@
               "RelativeToolTip": "..\\Service.Contracts\\IPhonePlanService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:14:49.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:14:49.628Z"
             },
             {
               "$type": "Document",
@@ -346,8 +333,7 @@
               "RelativeToolTip": "..\\Service.Contracts\\IUserPhonePlanService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:14:51.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:14:51.348Z"
             },
             {
               "$type": "Document",
@@ -359,8 +345,7 @@
               "RelativeToolTip": "..\\Service.Contracts\\IUserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:14:50.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:14:50.135Z"
             },
             {
               "$type": "Document",
@@ -372,8 +357,7 @@
               "RelativeToolTip": "..\\Contracts\\IRepositoryBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T13:08:35.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T13:08:35.679Z"
             },
             {
               "$type": "Document",
@@ -385,8 +369,7 @@
               "RelativeToolTip": "Migrations\\RepositoryContextModelSnapshot.cs",
               "ViewState": "AQIAADoAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T23:23:37.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T23:23:37.908Z"
             },
             {
               "$type": "Document",
@@ -398,8 +381,7 @@
               "RelativeToolTip": "..\\Entities\\Bill.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:57:02.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:57:02.058Z"
             },
             {
               "$type": "Document",
@@ -411,8 +393,7 @@
               "RelativeToolTip": "..\\Repository\\Configuration\\DeviceConfiguration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:57:33.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:57:33.61Z"
             },
             {
               "$type": "Document",
@@ -424,8 +405,7 @@
               "RelativeToolTip": "..\\Repository\\Configuration\\BillConfiguration.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:56:18.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:56:18.815Z"
             },
             {
               "$type": "Document",
@@ -437,8 +417,7 @@
               "RelativeToolTip": "..\\Repository\\PhonePlanRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:37:34.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:37:34.776Z"
             },
             {
               "$type": "Document",
@@ -450,8 +429,7 @@
               "RelativeToolTip": "ContextFactory\\RepositoryContextFactory.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T12:58:58.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T12:58:58.837Z"
             },
             {
               "$type": "Document",
@@ -463,8 +441,7 @@
               "RelativeToolTip": "..\\SkillstormTelecom.Presentation\\Class1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:34:50.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:34:50.825Z"
             },
             {
               "$type": "Document",
@@ -476,8 +453,7 @@
               "RelativeToolTip": "..\\Shared\\DataTransferObjects\\BillForUpdateDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:32:19.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:32:19.876Z"
             },
             {
               "$type": "Document",
@@ -489,8 +465,7 @@
               "RelativeToolTip": "..\\Shared\\DataTransferObjects\\BillForCreationDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:32:17.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:32:17.394Z"
             },
             {
               "$type": "Document",
@@ -502,8 +477,7 @@
               "RelativeToolTip": "..\\Shared\\DataTransferObjects\\BillForManipulationDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:32:18.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:32:18.591Z"
             },
             {
               "$type": "Document",
@@ -515,8 +489,7 @@
               "RelativeToolTip": "..\\Shared\\DataTransferObjects\\BillDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T20:32:14.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T20:32:14.731Z"
             },
             {
               "$type": "Document",
@@ -528,8 +501,7 @@
               "RelativeToolTip": "..\\Repository\\UserPhonePlanRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:37:33.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:37:33.183Z"
             },
             {
               "$type": "Document",
@@ -541,8 +513,7 @@
               "RelativeToolTip": "..\\Repository\\UserRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAYwBsAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:37:34.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:37:34.084Z"
             },
             {
               "$type": "Document",
@@ -554,8 +525,7 @@
               "RelativeToolTip": "..\\Repository\\RepositoryBase.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:48:21.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:48:21.815Z"
             },
             {
               "$type": "Document",
@@ -567,8 +537,7 @@
               "RelativeToolTip": "..\\Repository\\RepositoryContext.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:55:37.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:55:37.239Z"
             },
             {
               "$type": "Document",
@@ -580,8 +549,7 @@
               "RelativeToolTip": "..\\Repository\\BillRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwB0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:37:35.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:37:35.887Z"
             },
             {
               "$type": "Document",
@@ -593,8 +561,7 @@
               "RelativeToolTip": "..\\Contracts\\IUserRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:33:11.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:33:11.235Z"
             },
             {
               "$type": "Document",
@@ -606,8 +573,7 @@
               "RelativeToolTip": "..\\Contracts\\IPhonePlanRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:27:13.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:27:13.344Z"
             },
             {
               "$type": "Document",
@@ -619,8 +585,7 @@
               "RelativeToolTip": "..\\Contracts\\IUserPhonePlanRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:27:12.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T19:27:12.097Z"
             },
             {
               "$type": "Document",
@@ -632,8 +597,7 @@
               "RelativeToolTip": "..\\Contracts\\ILoggerManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T20:42:26.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T20:42:26.789Z"
             },
             {
               "$type": "Document",
@@ -645,8 +609,7 @@
               "RelativeToolTip": "Migrations\\20240402192412_InitialCreation.cs",
               "ViewState": "AQIAAGQAAAAAAAAAAAAQwG0AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T23:22:56.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T23:22:56.437Z"
             },
             {
               "$type": "Document",
@@ -658,8 +621,7 @@
               "RelativeToolTip": "GlobalExceptionHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T20:35:30.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T20:35:30.355Z"
             },
             {
               "$type": "Document",
@@ -671,8 +633,7 @@
               "RelativeToolTip": "..\\LoggerManager.cs\\LoggerManager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T20:58:40.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T20:58:40.999Z"
             },
             {
               "$type": "Document",
@@ -684,8 +645,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T20:31:01.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T20:31:01.648Z"
             },
             {
               "$type": "Document",
@@ -697,8 +657,7 @@
               "RelativeToolTip": "..\\Entities\\ErrorModel\\ErrorDetails.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T20:44:45.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T20:44:45.057Z"
             },
             {
               "$type": "Document",
@@ -710,8 +669,7 @@
               "RelativeToolTip": "..\\Entities\\Exceptions\\NotFoundException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T20:49:05.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T20:49:05.421Z"
             }
           ]
         }
