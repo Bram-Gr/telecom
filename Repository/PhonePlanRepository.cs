@@ -15,15 +15,13 @@ namespace Repository
         {
         }
 
-        public Task<IEnumerable<PhonePlan>> GetAllPhonePlansAsync(Guid userId, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<IEnumerable<PhonePlan>> GetAllPhonePlans(bool trackChanges)=>
+                    await FindAll(trackChanges).OrderBy(p => p.PlanName).ToListAsync();
 
-        public Task<PhonePlan> GetPhonePlanAsync(Guid userId, Guid id, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+ 
+
+        public Task<PhonePlan> GetPhonePlanByIdAsync(Guid id, bool trackChanges)=> 
+            FindByCondition(p => p.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
     }
 
 }
