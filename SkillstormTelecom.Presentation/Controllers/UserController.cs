@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SkillstormTelecom.Presentation.Controllers
 {
-    [Route("api/user/{UserId:guid}/device")]
+    [Route("api/user/{UserId:guid}")]
     [ApiController]
     public class UserController: ControllerBase
     {
@@ -14,14 +14,21 @@ namespace SkillstormTelecom.Presentation.Controllers
         public UserController(IServiceManager userService) =>
             _service = userService;
 
-        /*   [HttpGet("{UserID:guid}")]*/
-        [HttpGet]
+       
+        [HttpGet("device")]
         public async Task<IActionResult> GetDevicesByUserId(Guid userId)
         {
             var devices = await _service.Device.GetDevicesByUserIdAsync(userId, trackChanges: false);    
             return Ok(devices);
         }
 
-
+        [HttpGet("phoneplan")]
+        public async Task<IActionResult> GetPhonePlans(Guid userId)
+        {
+            var phonePlans = await _service.PhonePlan.GetPhonePlansByUserIdAsync(userId, trackChanges: false);
+            Console.WriteLine("Hello");
+            Console.WriteLine(phonePlans);
+            return Ok(phonePlans);
+        }
     }
 }

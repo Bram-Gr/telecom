@@ -17,12 +17,12 @@ LogManager.Setup().LoadConfigurationFromFile(string.Concat(Directory.GetCurrentD
 
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
-/*builder.Services.ConfigureLoggerService();*/
+builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(Program));
-/*builder.Services.AddExceptionHandler<GlobalExceptionHandler>();*/
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -72,8 +72,8 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 app.UseCors("CorsPolicy");
 
-app.UseAuthorization(); //throws error
+app.UseAuthorization(); 
 
-app.MapControllers();   //throws error
+app.MapControllers();   
 
 app.Run();

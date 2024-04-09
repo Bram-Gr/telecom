@@ -30,12 +30,11 @@ namespace SkillstormTelecom.Presentation.Controllers
         [HttpPost("{PlanId:guid}/device")]
         public async Task<IActionResult> AddDeviceByPlan([FromBody] DeviceForCreationDto device, Guid PlanId)
         {
-            Console.WriteLine(PlanId);
             if (device == null)
                 return BadRequest("Device object is null");
 
             var createdDevice = await _service.Device.addDeviceByPlanAsync(device, PlanId);
-            return CreatedAtRoute("DeviceById", new { id = createdDevice.Id }, createdDevice);
+            return CreatedAtRoute( new { id = createdDevice.Id }, createdDevice);
         }
     }
 }

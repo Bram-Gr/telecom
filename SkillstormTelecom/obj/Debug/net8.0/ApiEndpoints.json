@@ -61,5 +61,63 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
+    "Method": "GetPhonePlans",
+    "RelativePath": "api/user/{UserId}/phoneplan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserPhonePlanController",
+    "Method": "AddPlanByUser",
+    "RelativePath": "api/userphoneplan/{UserId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plan",
+        "Type": "Shared.DataTransferObjects.UserPhonePlanDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserPhonePlanController",
+    "Method": "DeletePlanByUser",
+    "RelativePath": "api/userphoneplan/{UserId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plan",
+        "Type": "Shared.DataTransferObjects.UserPhonePlanDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

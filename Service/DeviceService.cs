@@ -13,13 +13,15 @@ namespace Service
 {
     public class DeviceService : IDeviceService
     {
-        private IRepositoryManager _repositoryManager;
-        private IMapper _mapper;
+        private readonly IRepositoryManager _repositoryManager;
+        private readonly IMapper _mapper;
+        private readonly ILoggerManager _logger;
 
-        public DeviceService(IRepositoryManager repositoryManager, IMapper mapper)
+        public DeviceService(IRepositoryManager repositoryManager, IMapper mapper, ILoggerManager logger)
         {
             _repositoryManager = repositoryManager;
             _mapper = mapper;
+            _logger = logger;
         }
 
         public async Task<IEnumerable<DeviceDto>> GetDevicesByUserIdAsync(Guid userId, bool trackChanges)

@@ -2,7 +2,7 @@
 using NLog;
 
 
-namespace LoggerManager.cs
+namespace LoggerService
 {
     public class LoggerManager : ILoggerManager
     {

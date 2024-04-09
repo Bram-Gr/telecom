@@ -15,14 +15,17 @@ namespace Repository
         {
         }
 
-        public Task<IEnumerable<UserPhonePlan>> GetAllUserPhonePlansAsync(Guid userId, bool trackChanges)
+        public void CreateUserPhonePlan(UserPhonePlan userPhonePlan)=> Create(userPhonePlan);
+        public void DeleteUserPhonePlan(UserPhonePlan userPhonePlan)=> Delete(userPhonePlan);
+        
+
+
+        public IEnumerable<UserPhonePlan> GetPhonePlansByUser(Guid userId, bool trackChanges)
         {
-            throw new NotImplementedException();
+            var phonePlanIds = FindByCondition(p => p.UserID.Equals(userId), trackChanges).ToList();
+            return phonePlanIds;
         }
 
-        public Task<UserPhonePlan> GetUserPhonePlanAsync(Guid userId, Guid id, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

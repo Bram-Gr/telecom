@@ -20,10 +20,8 @@ namespace Repository
             throw new NotImplementedException();
         }
 
-        public Task<User> GetUserAsync(Guid id, bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<User> GetUserByIdAsync(Guid id, bool trackChanges)=>
+                    await FindByCondition(u => u.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
     }
   
 }

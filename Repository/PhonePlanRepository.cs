@@ -22,6 +22,13 @@ namespace Repository
 
         public Task<PhonePlan> GetPhonePlanByIdAsync(Guid id, bool trackChanges)=> 
             FindByCondition(p => p.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
+
+        public async Task<IEnumerable<PhonePlan>> GetPhonePlansByIdsAsync(IEnumerable<Guid> phonePlanIds, bool trackChanges)
+        {
+            return await FindByCondition(p => p.Id.Equals(phonePlanIds), trackChanges).ToListAsync();
+        }
+
+
     }
 
 }

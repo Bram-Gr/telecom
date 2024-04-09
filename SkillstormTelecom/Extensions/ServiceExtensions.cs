@@ -1,8 +1,11 @@
-﻿using Repository;
+﻿
+using Contracts;  
 using Microsoft.EntityFrameworkCore;
-using Contracts;
-using Service.Contracts;
+using Repository;
 using Service;
+using Service.Contracts;
+using LoggerService;
+
 
 
 
@@ -28,8 +31,8 @@ namespace SkillstormTelecom.Extensions
               //  options.ForwardWindowsAuthentication = false;
             });
 
-  /*      public static void ConfigureLoggerService(this IServiceCollection services) =>
-            services.AddSingleton<ILoggerManager, LoggerManager>();*/
+        public static void ConfigureLoggerService(this IServiceCollection services) =>
+            services.AddSingleton<ILoggerManager, LoggerManager>();
 
         public static void ConfigureRepositoryManager(this IServiceCollection services) =>
             services.AddScoped<IRepositoryManager, RepositoryManager>();

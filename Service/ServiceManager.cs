@@ -14,13 +14,13 @@ namespace Service
       private readonly Lazy<IUserPhonePlanService> _userPhonePlanService;
      
 
-    public ServiceManager(IRepositoryManager repositoryManager, IMapper mapper)
+    public ServiceManager(IRepositoryManager repositoryManager, IMapper mapper, ILoggerManager logger)
         {
-            _userService = new Lazy<IUserService>(() => new UserService(repositoryManager, mapper));
-            _billService = new Lazy<IBillService>(() => new BillService(repositoryManager, mapper));
-            _deviceService = new Lazy<IDeviceService>(() => new DeviceService(repositoryManager, mapper));  
-            _phonePlanService = new Lazy<IPhonePlanService>(() => new PhonePlanService(repositoryManager, mapper));
-            _userPhonePlanService = new Lazy<IUserPhonePlanService>(() => new UserPhonePlanService(repositoryManager, mapper));
+            _userService = new Lazy<IUserService>(() => new UserService(repositoryManager, mapper, logger));
+            _billService = new Lazy<IBillService>(() => new BillService(repositoryManager, mapper, logger));
+            _deviceService = new Lazy<IDeviceService>(() => new DeviceService(repositoryManager, mapper, logger));  
+            _phonePlanService = new Lazy<IPhonePlanService>(() => new PhonePlanService(repositoryManager, mapper, logger));
+            _userPhonePlanService = new Lazy<IUserPhonePlanService>(() => new UserPhonePlanService(repositoryManager, mapper,logger));
         }
 
         public IUserService User => _userService.Value;
