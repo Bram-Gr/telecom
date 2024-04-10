@@ -28,6 +28,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     options.SuppressModelStateInvalidFilter = true;
 });
 
+builder.Services.ConfigureSwagger(); 
 
 builder.Services.AddControllers(config =>
 {
@@ -72,7 +73,14 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 app.UseCors("CorsPolicy");
 
-app.UseAuthorization(); 
+app.UseAuthorization();
+
+
+app.UseSwagger();
+app.UseSwaggerUI(s =>
+{
+    s.SwaggerEndpoint("/swagger/v1/swagger.json", "SkillstormTelecom API V1");
+});
 
 app.MapControllers();   
 

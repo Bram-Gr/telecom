@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SkillstormTelecom.Presentation.Controllers
 {
-    [Route("api/userphoneplan/{UserId:guid}")]
+    [Route("api/userphoneplan/{userId:guid}")]
     [ApiController]
     public class UserPhonePlanController: ControllerBase
     {
@@ -30,10 +30,12 @@ namespace SkillstormTelecom.Presentation.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeletePlanByUser([FromBody] UserPhonePlanDto plan, Guid userId)
         {
-            if (plan == null)
+            var planId = plan.PlanID;
+            Console.WriteLine(planId);
+            if (planId == null)
                 return BadRequest("Plan object is null");
 
-            await _service.UserPhonePlan.DeletePlanAsync(plan, userId);
+            await _service.UserPhonePlan.DeletePlanAsync(planId, userId);
             return NoContent();
         }
     }

@@ -29,6 +29,7 @@ namespace Entities
         [Column("Email")]
         public string? Email { get; set; }
 
+        public List<PhonePlan> PhonePlan { get; set; }
 
 
 

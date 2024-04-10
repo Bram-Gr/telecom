@@ -35,21 +35,20 @@ namespace Service
             return userPhonePlanDto;
         }
 
-        public async Task<UserPhonePlanDto> DeletePlanAsync(UserPhonePlanDto plan, Guid userId)
+        public async Task DeletePlanAsync(Guid planId, Guid userId)
         {
-          var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(plan.PlanID, false);
+          var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, false);
           var user = await _repositoryManager.User.GetUserByIdAsync(userId, false);
-
             if (phonePlan == null || user == null)
-               throw new UserPhonePlanNotFoundException(userId, plan.PlanID);
-               
+            {
+                throw new NotFoundException($"Phone Plan with id{planId} or User with id:{userId}not found");
+            }
 
-            //Add an id to the join table and add getUserPhonePlanById method to get the userPhonePlan
-            //by userId and planId to delete 
-            _repositoryManager.UserPhonePlan.DeleteUserPhonePlan(_mapper.Map<UserPhonePlan>(plan));
+          user.PhonePlan.Remove(phonePlan);
+          
             await _repositoryManager.SaveAsync();
 
-            return plan;
+    
         }
     }
 }

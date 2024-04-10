@@ -81,7 +81,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserPhonePlanController",
     "Method": "AddPlanByUser",
-    "RelativePath": "api/userphoneplan/{UserId}",
+    "RelativePath": "api/userphoneplan/{userId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -102,7 +102,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserPhonePlanController",
     "Method": "DeletePlanByUser",
-    "RelativePath": "api/userphoneplan/{UserId}",
+    "RelativePath": "api/userphoneplan/{userId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

@@ -5,6 +5,7 @@ using Repository;
 using Service;
 using Service.Contracts;
 using LoggerService;
+using Microsoft.OpenApi.Models;
 
 
 
@@ -43,6 +44,12 @@ namespace SkillstormTelecom.Extensions
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration) =>
             services.AddDbContext<RepositoryContext>(options =>
                            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
-                                           
+
+        public static void ConfigureSwagger(this IServiceCollection services) =>
+        services.AddSwaggerGen(s =>
+        {
+            s.SwaggerDoc("v1", new OpenApiInfo { Title = "SkillstormTelecom", Version = "v1" });
+        });
+
     }
 }

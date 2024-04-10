@@ -26,6 +26,13 @@ namespace Repository
         {
             modelBuilder.Entity<UserPhonePlan>()
                 .HasKey(up => new { up.UserID, up.PlanID });
+            modelBuilder.Entity<User>().HasMany(u => u.PhonePlan)
+                .WithMany(up => up.User)
+                .UsingEntity<UserPhonePlan>(
+                l => l.HasOne<PhonePlan>().WithMany().HasForeignKey(up => up.PlanID),
+                r => r.HasOne<User>().WithMany().HasForeignKey(up => up.UserID)
+                ) ;
+                
 
          modelBuilder.ApplyConfiguration(new UserConfiguration());
          modelBuilder.ApplyConfiguration(new UserPhonePlanConfiguration());

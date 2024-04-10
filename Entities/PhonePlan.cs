@@ -26,6 +26,9 @@ namespace Entities
 
         [Column("Other plan details")]
         public string? OtherPlanDetails { get; set; }
+
+
+        public List<User> User { get; set; }
     }
 }
 /*PhonePlan table:

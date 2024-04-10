@@ -156,3 +156,7 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Service.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\SkillstormTelecom.Presentation.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Shared.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
