@@ -11,7 +11,7 @@ namespace Service.Contracts
     public interface IUserPhonePlanService
     {
         /* IEnumerable<PhonePlan> GetPhonePlans(Guid userId, bool trackChanges);*/
-        Task<UserPhonePlanDto> AddPlanAsync(UserPhonePlanDto plan, Guid userId);
+        Task AddPlanAsync(Guid planId, Guid userId);
         Task DeletePlanAsync(Guid planId, Guid userId);
     }
 }

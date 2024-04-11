@@ -25,27 +25,39 @@ namespace Service
             _logger = logger;
         }
 
-        public async Task<UserPhonePlanDto> AddPlanAsync(UserPhonePlanDto plan, Guid userId)
+        public async Task AddPlanAsync(Guid planId, Guid userId)
         {
-            var userPhonePlan = _mapper.Map<UserPhonePlan>(plan);
-            userPhonePlan.UserID = userId;
-            _repositoryManager.UserPhonePlan.CreateUserPhonePlan(userPhonePlan);
+
+           
+            var user = await _repositoryManager.User.GetUserByIdAsync(userId, true);
+            var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, true);
+            if (phonePlan == null)
+            {
+                throw new PhonePlanNotFoundException(planId);
+            }
+            user.PhonePlans.Add(phonePlan);
+
             await _repositoryManager.SaveAsync();
-            var userPhonePlanDto = _mapper.Map<UserPhonePlanDto>(userPhonePlan);
-            return userPhonePlanDto;
+
+          
         }
 
         public async Task DeletePlanAsync(Guid planId, Guid userId)
         {
-          var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, false);
-          var user = await _repositoryManager.User.GetUserByIdAsync(userId, false);
+          var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, true);
+          var user = await _repositoryManager.User.GetUserByIdAsync(userId, true);
             if (phonePlan == null || user == null)
             {
-                throw new NotFoundException($"Phone Plan with id{planId} or User with id:{userId}not found");
+                throw new UserPhonePlanNotFoundException(planId,userId);
             }
 
-          user.PhonePlan.Remove(phonePlan);
-          
+            user.PhonePlans.Remove(phonePlan);
+   /*         phonePlan.User.Remove(user);
+*/
+
+            /*       var userPhonePlan = _repositoryManager.UserPhonePlan.GetPhonePlansByUser(userId, false);
+                   userPhonePlan.    Remove(user);
+                   userPhonePlan.Remove(phonePlan);*/
             await _repositoryManager.SaveAsync();
 
     

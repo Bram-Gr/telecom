@@ -17,15 +17,15 @@ namespace Repository
 
         public void CreateUserPhonePlan(UserPhonePlan userPhonePlan)=> Create(userPhonePlan);
         public void DeleteUserPhonePlan(UserPhonePlan userPhonePlan)=> Delete(userPhonePlan);
-        
+
 
 
         public IEnumerable<UserPhonePlan> GetPhonePlansByUser(Guid userId, bool trackChanges)
         {
-            var phonePlanIds = FindByCondition(p => p.UserID.Equals(userId), trackChanges).ToList();
+            var phonePlanIds = FindByCondition(p => p.UserId.Equals(userId), trackChanges).ToList();
             return phonePlanIds;
         }
 
-       
+
     }
 }

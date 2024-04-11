@@ -5,12 +5,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 
 namespace Entities
 {
     public class User
+      /*  : IdentityUser*/
     {
-        [Column("UserID")]
+        [Column("UserId")]
         public Guid Id { get; set; }
        
         [Required(ErrorMessage="Username is required.")]
@@ -29,7 +31,9 @@ namespace Entities
         [Column("Email")]
         public string? Email { get; set; }
 
-        public List<PhonePlan> PhonePlan { get; set; }
+        public List<PhonePlan> PhonePlans { get; } = [];/*
+        public ICollection<PhonePlan> PhonePlans { get; set; } = new List<PhonePlan>();*/
+        /*        public List<UserPhonePlan> UserPhonePlans { get; } = [];*/
 
 
 

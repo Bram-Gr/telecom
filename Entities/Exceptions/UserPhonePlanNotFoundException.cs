@@ -9,7 +9,7 @@ namespace Entities.Exceptions
     public class UserPhonePlanNotFoundException: Exception
     {
         public UserPhonePlanNotFoundException(Guid userId, Guid planId)
-            : base($"The user with the id:{userId} does not have a plan with the id: {planId}")
+            : base($"UserPhonePlan record with id planId:{planId}, userId:{userId} not found")
         {
         }
     }

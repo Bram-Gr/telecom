@@ -10,7 +10,7 @@ namespace Entities
 {
     public class PhonePlan
     {
-        [Column("PlanID")]
+        [Column("PhonePlanId")]
         public Guid Id { get; set; }
 
         [Column("PlanName")]
@@ -28,7 +28,9 @@ namespace Entities
         public string? OtherPlanDetails { get; set; }
 
 
-        public List<User> User { get; set; }
+        public List<User> Users { get; } = [];
+        /*public ICollection<User> Users { get; set; } = new List<User>();*/
+        /*     public List<UserPhonePlan> UserPhonePlans { get; } = [];*/
     }
 }
 /*PhonePlan table:

@@ -3,8 +3,10 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\b
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\SkillstormTelecom.Presentation.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Entities.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Service.Contracts.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Shared.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Service.Contracts.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Entities.pdb
+C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Shared.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\SkillstormTelecom.Presentation.csproj.AssemblyReference.cache
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\SkillstormTelecom.Presentation.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\SkillstormTelecom.Presentation.AssemblyInfoInputs.cache
@@ -16,5 +18,3 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\o
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\refint\SkillstormTelecom.Presentation.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\SkillstormTelecom.Presentation.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\obj\Debug\net8.0\ref\SkillstormTelecom.Presentation.dll
-C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Shared.dll
-C:\Users\b93ra\Workspace\TelecomProject\telecom\SkillstormTelecom.Presentation\bin\Debug\net8.0\Shared.pdb

@@ -11,9 +11,9 @@ namespace Shared.DataTransferObjects
     public class UserPhonePlanDto
     {
         [ForeignKey(nameof(User))]
-        public Guid UserID { get; set; }
+        public Guid UserId { get; set; }
 
         [ForeignKey(nameof(PhonePlan))]
-        public Guid PlanID { get; set; }
+        public Guid PhonePlanId { get; set; }
     }
 }

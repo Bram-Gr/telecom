@@ -21,7 +21,7 @@ namespace Entities
         public Guid UserID { get; set; }
 
         [ForeignKey(nameof(PhonePlan))]
-        public Guid PlanID { get; set; }
+        public Guid PhonePlanID { get; set; }
 
         [Column("Other device details")]
         public string? OtherDeviceDetails { get; set; }

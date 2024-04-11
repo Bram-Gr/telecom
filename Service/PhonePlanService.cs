@@ -36,28 +36,13 @@ namespace Service
             return phonePlansToReturn;
         }
 
-        /*      public IEnumerable<PhonePlan> GetPhonePlansByUserIdAsync(Guid userId, bool trackChanges)
-              {
-                  var phonePlanIds = _repositoryManager.UserPhonePlan.GetPhonePlansByUser(userId, trackChanges);
-                  var phonePlans = _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(userId, trackChanges);
-                  var phonePlansToReturn = _mapper.Map<IEnumerable<PhonePlan>>(phonePlans);
-
-                  return phonePlansToReturn;
-              }*/
-
         public async Task<IEnumerable<PhonePlan>> GetPhonePlansByUserIdAsync(Guid userId, bool trackChanges)
         {
-            var userPhonePlans = _repositoryManager.UserPhonePlan.GetPhonePlansByUser(userId, trackChanges); // gets all plan Ids and userIds
-            Console.WriteLine(userPhonePlans);  
-            var phonePlanIds = userPhonePlans.Select(up => up.PlanID); // gets all plan Ids
-            Console.WriteLine(phonePlanIds);
-            
-            var phonePlans = await _repositoryManager.PhonePlan.GetPhonePlansByIdsAsync(phonePlanIds, trackChanges);
+            var user = await _repositoryManager.User.GetUserByIdAsync(userId, false);
 
-            
-            var phonePlansToReturn = _mapper.Map<IEnumerable<PhonePlan>>(phonePlans);
+            var phonePlans = user.PhonePlans;
 
-            return phonePlansToReturn;
+            return phonePlans;
         }
 
 
