@@ -19,13 +19,23 @@ namespace Repository
         public void DeleteUserPhonePlan(UserPhonePlan userPhonePlan)=> Delete(userPhonePlan);
 
 
-
         public IEnumerable<UserPhonePlan> GetPhonePlansByUser(Guid userId, bool trackChanges)
         {
             var phonePlanIds = FindByCondition(p => p.UserId.Equals(userId), trackChanges).ToList();
             return phonePlanIds;
         }
 
+        public Task GetUserPhonePlan(Guid userId, Guid phonePlanId)
+        {
+            throw new NotImplementedException();
+        }
 
+        public Task<UserPhonePlan> GetUserPhonePlanAsync(Guid userId, Guid planId)
+        {
+            var userPhonePlan = FindByCondition(p => p.UserId.Equals(userId) && p.PhonePlanId
+               .Equals(planId), false)
+                .SingleOrDefaultAsync();
+            return userPhonePlan;
+        }
     }
 }

@@ -11,6 +11,8 @@ namespace Contracts
     {
         void CreateUserPhonePlan(UserPhonePlan userPhonePlan);
         void DeleteUserPhonePlan(UserPhonePlan userPhonePlan);
+        Task GetUserPhonePlan(Guid userId, Guid phonePlanId);
         IEnumerable<UserPhonePlan> GetPhonePlansByUser(Guid userId, bool trackChanges);
+        Task<UserPhonePlan> GetUserPhonePlanAsync(Guid userId, Guid planId);
     }
 }

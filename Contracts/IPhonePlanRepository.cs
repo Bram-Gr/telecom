@@ -12,7 +12,6 @@ namespace Contracts
         Task<IEnumerable<PhonePlan>> GetAllPhonePlans(bool trackChanges);
         Task<IEnumerable<PhonePlan>> GetPhonePlansByIdsAsync(IEnumerable<Guid> phonePlanIds, bool trackChanges);
         Task<PhonePlan> GetPhonePlanByIdAsync(Guid id, bool trackChanges);
-
-  
+        Task<IEnumerable<PhonePlan>> GetPhonePlansByUserIdAsync(Guid userId, bool trackChanges);
     }
 }

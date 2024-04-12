@@ -28,7 +28,8 @@ namespace Repository
 
 
 
-
+            modelBuilder.Entity<UserPhonePlan>()
+                .HasKey(up => new { up.UserId, up.PhonePlanId });
 
             modelBuilder.Entity<User>()
                 .HasMany(u => u.PhonePlans)

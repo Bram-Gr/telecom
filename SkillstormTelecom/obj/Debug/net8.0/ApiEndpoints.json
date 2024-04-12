@@ -48,6 +48,22 @@
   },
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
+    "Method": "GetBills",
+    "RelativePath": "api/user/{userId}/bills",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
     "Method": "GetDevicesByUserId",
     "RelativePath": "api/user/{userId}/device",
     "HttpMethod": "GET",

@@ -15,6 +15,13 @@ namespace SkillstormTelecom.Presentation.Controllers
             _service = userService;
 
 
+        [HttpGet("bills")]
+        public async Task<IActionResult> GetBills(Guid userId)
+        {
+            var bills = await _service.PhonePlan.GetTotalPriceOfPhonePlansByUserIdAsync(userId, trackChanges: false);
+            return Ok(bills);
+        }
+
         [HttpGet("device")]
         public async Task<IActionResult> GetDevicesByUserId(Guid userId)
         {

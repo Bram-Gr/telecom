@@ -13,8 +13,8 @@ namespace Entities
     {
 
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+    /*    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; set; }*/
         /*        [ForeignKey(nameof(User))]*/
         public Guid UserId { get; set; }
         /*

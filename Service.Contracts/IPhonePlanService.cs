@@ -14,5 +14,6 @@ namespace Service.Contracts
         Task<IEnumerable<PhonePlan>> GetPhonePlansAsync(bool trackChanges);
         /*   IEnumerable<PhonePlan> GetPhonePlansByUserIdAsync(Guid userId, bool trackChanges);*/
         Task <IEnumerable<PhonePlan>> GetPhonePlansByUserIdAsync(Guid userId, bool trackChanges);
+        public Task<double> GetTotalPriceOfPhonePlansByUserIdAsync(Guid userId, bool trackChanges);
     }
 }

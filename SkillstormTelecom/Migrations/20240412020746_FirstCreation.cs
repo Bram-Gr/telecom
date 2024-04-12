@@ -77,14 +77,13 @@ namespace SkillstormTelecom.Migrations
                 name: "UserPhonePlan",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     PhonePlanId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     DateAdded = table.Column<DateTime>(name: "Date Added", type: "datetime2", nullable: true, defaultValueSql: "getdate()")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserPhonePlan", x => x.Id);
+                    table.PrimaryKey("PK_UserPhonePlan", x => new { x.UserId, x.PhonePlanId });
                     table.ForeignKey(
                         name: "FK_UserPhonePlan_PhonePlans_PhonePlanId",
                         column: x => x.PhonePlanId,
@@ -104,9 +103,9 @@ namespace SkillstormTelecom.Migrations
                 columns: new[] { "BillID", "BillingAddress", "BillingDate", "Other bill details", "TotalAmount", "UserID" },
                 values: new object[,]
                 {
-                    { new Guid("46d99311-79e0-46b2-ba06-d50480a7b1c3"), null, new DateTime(2024, 4, 11, 17, 5, 16, 186, DateTimeKind.Local).AddTicks(1985), "Bill for the month of January", 75.0, new Guid("12ae765a-189b-4194-81e6-0b4046f32853") },
-                    { new Guid("9f6943a3-4f5e-471c-9b6c-a427c8bf4b20"), null, new DateTime(2024, 4, 11, 17, 5, 16, 186, DateTimeKind.Local).AddTicks(1928), "Bill for the month of January", 100.0, new Guid("8a55f01b-1cd0-4848-b7ae-86c40b1ad289") },
-                    { new Guid("f8ff0b05-a399-4629-ace4-edf4ea173ee1"), null, new DateTime(2024, 4, 11, 17, 5, 16, 186, DateTimeKind.Local).AddTicks(1992), "Bill for the month of January", 25.0, new Guid("2a4425e8-f6bf-4d34-9c8d-5236751f7635") }
+                    { new Guid("46d99311-79e0-46b2-ba06-d50480a7b1c3"), null, new DateTime(2024, 4, 11, 22, 7, 45, 919, DateTimeKind.Local).AddTicks(6007), "Bill for the month of January", 75.0, new Guid("12ae765a-189b-4194-81e6-0b4046f32853") },
+                    { new Guid("9f6943a3-4f5e-471c-9b6c-a427c8bf4b20"), null, new DateTime(2024, 4, 11, 22, 7, 45, 919, DateTimeKind.Local).AddTicks(5948), "Bill for the month of January", 100.0, new Guid("8a55f01b-1cd0-4848-b7ae-86c40b1ad289") },
+                    { new Guid("f8ff0b05-a399-4629-ace4-edf4ea173ee1"), null, new DateTime(2024, 4, 11, 22, 7, 45, 919, DateTimeKind.Local).AddTicks(6012), "Bill for the month of January", 25.0, new Guid("2a4425e8-f6bf-4d34-9c8d-5236751f7635") }
                 });
 
             migrationBuilder.InsertData(
@@ -147,11 +146,6 @@ namespace SkillstormTelecom.Migrations
                 name: "IX_UserPhonePlan_PhonePlanId",
                 table: "UserPhonePlan",
                 column: "PhonePlanId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserPhonePlan_UserId",
-                table: "UserPhonePlan",
-                column: "UserId");
         }
 
         /// <inheritdoc />

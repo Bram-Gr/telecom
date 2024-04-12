@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Contracts;
 using Entities;
+using Entities.Exceptions;
 using Service.Contracts;
 using Shared.DataTransferObjects;
 using System;
@@ -40,11 +41,26 @@ namespace Service
         {
             var user = await _repositoryManager.User.GetUserByIdAsync(userId, false);
 
-            var phonePlans = user.PhonePlans;
+            /*var phonePlans = user.PhonePlans;*/
 
+            var phonePlans = await _repositoryManager.PhonePlan.GetPhonePlansByUserIdAsync(userId, trackChanges);
             return phonePlans;
         }
 
+        public async Task<double> GetTotalPriceOfPhonePlansByUserIdAsync(Guid userId, bool trackChanges)
+        {
+            var user = await _repositoryManager.User.GetUserByIdAsync(userId, trackChanges);
+
+            if (user == null)
+            {
+                throw new UserNotFoundException(userId);
+            }
+
+            var phonePlans = await _repositoryManager.PhonePlan.GetPhonePlansByUserIdAsync(userId, trackChanges);
+            double totalPrice = phonePlans.Sum(plan => plan.Price);
+
+            return totalPrice;
+        }
 
 
     }
