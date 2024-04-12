@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SkillstormTelecom.Presentation.Controllers
 {
-    [Route("api/user/{userId:guid}")]
+    [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -15,21 +15,21 @@ namespace SkillstormTelecom.Presentation.Controllers
             _service = userService;
 
 
-        [HttpGet("bills")]
+        [HttpGet("{userId:guid}/bills")]
         public async Task<IActionResult> GetBills(Guid userId)
         {
             var bills = await _service.PhonePlan.GetTotalPriceOfPhonePlansByUserIdAsync(userId, trackChanges: false);
             return Ok(bills);
         }
 
-        [HttpGet("device")]
+        [HttpGet("{userId:guid}/device")]
         public async Task<IActionResult> GetDevicesByUserId(Guid userId)
         {
             var devices = await _service.Device.GetDevicesByUserIdAsync(userId, trackChanges: false);
             return Ok(devices);
         }
 
-        [HttpGet("phoneplan")]
+        [HttpGet("{userId:guid}/phoneplan")]
         public async Task<IActionResult> GetPhonePlans(Guid userId)
         {
             var phonePlans = await _service.PhonePlan.GetPhonePlansByUserIdAsync(userId, trackChanges: false);
@@ -37,7 +37,7 @@ namespace SkillstormTelecom.Presentation.Controllers
         }
 
 
-        [HttpPost("phoneplan/{planId:guid}", Name = "planByUserId")]
+        [HttpPost("{userId:guid}/phoneplan/{planId:guid}", Name = "planByUserId")]
         public async Task<IActionResult> AddPlanByUser(Guid userId, Guid planId)
         {
             if (planId == null)
@@ -47,7 +47,7 @@ namespace SkillstormTelecom.Presentation.Controllers
             return Created();
         }
 
-        [HttpDelete("phoneplan/{planId:guid}")]
+        [HttpDelete("{userId:guid}/phoneplan/{planId:guid}")]
         public async Task<IActionResult> DeletePlanByUser(Guid userId,Guid planId)
         {
          
@@ -58,5 +58,17 @@ namespace SkillstormTelecom.Presentation.Controllers
             await _service.UserPhonePlan.DeletePlanAsync(planId, userId);
             return NoContent();
         }
+
+
+        [HttpPost(Name = "CreateUser")]
+        public async Task<IActionResult> CreateUser([FromBody] UserForCreationDto user)
+        {
+            if (user == null)
+                return BadRequest("User object is null");
+
+            var createdUser = await _service.User.CreateUserAsync(user);
+            return CreatedAtRoute("CreateUser", new { Id = createdUser.Id }, createdUser);
+        }
+
     }
 }

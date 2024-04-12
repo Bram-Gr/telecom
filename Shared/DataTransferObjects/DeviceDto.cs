@@ -13,7 +13,9 @@ namespace Shared.DataTransferObjects
     {
         public Guid Id { get; init; }
         public string? PhoneNumber { get; init; }
- /*       public Guid UserID { get; init; } */
+        /*       public Guid UserID { get; init; } */
+
+        [ForeignKey(nameof(PhonePlan))]
         public Guid PhonePlanID { get; init; }
         public string? OtherDeviceDetails { get; init; }
     }

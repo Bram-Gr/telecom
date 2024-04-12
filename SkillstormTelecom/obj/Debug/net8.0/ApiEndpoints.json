@@ -69,8 +69,24 @@
   },
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Shared.DataTransferObjects.UserForCreationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
     "Method": "GetBills",
-    "RelativePath": "api/user/{userId}/bills",
+    "RelativePath": "api/User/{userId}/bills",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -86,7 +102,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
     "Method": "GetDevicesByUserId",
-    "RelativePath": "api/user/{userId}/device",
+    "RelativePath": "api/User/{userId}/device",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -102,7 +118,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
     "Method": "GetPhonePlans",
-    "RelativePath": "api/user/{userId}/phoneplan",
+    "RelativePath": "api/User/{userId}/phoneplan",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -118,7 +134,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
     "Method": "AddPlanByUser",
-    "RelativePath": "api/user/{userId}/phoneplan/{planId}",
+    "RelativePath": "api/User/{userId}/phoneplan/{planId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -139,7 +155,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
     "Method": "DeletePlanByUser",
-    "RelativePath": "api/user/{userId}/phoneplan/{planId}",
+    "RelativePath": "api/User/{userId}/phoneplan/{planId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

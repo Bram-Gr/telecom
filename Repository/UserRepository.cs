@@ -15,6 +15,8 @@ namespace Repository
         {
         }
 
+        public void CreateUser(User user) => Create(user);
+
         public Task<IEnumerable<User>> GetAllUsersAsync(bool trackChanges)
         {
             throw new NotImplementedException();

@@ -6,9 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Shared.DataTransferObjects
 {
-    public class UserForManipulation
+    public class UserForManipulationDto
     {
         [Required(ErrorMessage = "Username is required.")]
         [MaxLength(50, ErrorMessage = "Username must be less than 50 characters.")]

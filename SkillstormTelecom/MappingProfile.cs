@@ -14,9 +14,9 @@ namespace SkillstormTelecom
             CreateMap<User, UserDto>();
             CreateMap<PhonePlanDto, PhonePlan>();
             CreateMap<UserPhonePlanDto, UserPhonePlan>();
-            CreateMap<Bill, BillDto>();
             CreateMap<UserPhonePlan, UserPhonePlanDto>();
             CreateMap<DeviceForUpdateDto, Device>().ReverseMap();
+            CreateMap<UserForCreationDto, User>();
 
         }
   

@@ -1,11 +1,13 @@
 ﻿using AutoMapper;
 using Contracts;
 using Service.Contracts;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entities;
 
 namespace Service
 {
@@ -20,6 +22,15 @@ namespace Service
             _repositoryManager = repositoryManager;
             _mapper = mapper;
             _logger = logger;
+        }
+
+        public async Task<UserDto> CreateUserAsync(UserForCreationDto user)
+        {
+            var userEntity = _mapper.Map<User>(user);
+            _repositoryManager.User.CreateUser(userEntity);
+            await _repositoryManager.SaveAsync();
+            var userToReturn = _mapper.Map<UserDto>(userEntity);
+            return userToReturn;
         }
     }
 }
