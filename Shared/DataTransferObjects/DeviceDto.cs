@@ -13,8 +13,8 @@ namespace Shared.DataTransferObjects
     {
         public Guid Id { get; init; }
         public string? PhoneNumber { get; init; }
- /*       public Guid UserID { get; init; }
-        public Guid PlanID { get; init; }*/
+ /*       public Guid UserID { get; init; } */
+        public Guid PhonePlanID { get; init; }
         public string? OtherDeviceDetails { get; init; }
     }
 }

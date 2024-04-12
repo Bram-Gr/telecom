@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Shared.DataTransferObjects;
 
 namespace SkillstormTelecom.Presentation.Controllers
 {
@@ -24,5 +26,15 @@ namespace SkillstormTelecom.Presentation.Controllers
             await _service.Device.DeleteDeviceAsync(deviceId, trackChanges: false);
             return NoContent();
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateDevice(Guid deviceId,[FromBody] DeviceForUpdateDto device)
+        {
+            if (device == null)
+                return BadRequest("Device object is null");
+
+            await _service.Device.UpdateDeviceAsync(deviceId, device, trackChanges: true);
+            return NoContent();
+        }   
     }
 }

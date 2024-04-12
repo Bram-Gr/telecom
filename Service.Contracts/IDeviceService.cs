@@ -13,5 +13,6 @@ namespace Service.Contracts
         Task<IEnumerable<DeviceDto>> GetDevicesByUserIdAsync(Guid userId,bool trackChanges);
         Task<DeviceDto> addDeviceByPlanAsync(DeviceForCreationDto device, Guid planId);
         Task DeleteDeviceAsync(Guid deviceId, bool trackChanges);
+        Task UpdateDeviceAsync(Guid id, DeviceForUpdateDto device, bool trackChanges);
     }
 }

@@ -16,6 +16,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.DeviceController",
+    "Method": "UpdateDevice",
+    "RelativePath": "api/device/{deviceId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "device",
+        "Type": "Shared.DataTransferObjects.DeviceForUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.PhonePlanController",
     "Method": "GetPhonePlans",
     "RelativePath": "api/phoneplan",

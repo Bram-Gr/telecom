@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entities;
+using Entities.Exceptions;  
 
 namespace Service
 {
@@ -26,12 +27,6 @@ namespace Service
 
         public async Task<IEnumerable<DeviceDto>> GetDevicesByUserIdAsync(Guid userId, bool trackChanges)
         {
-        /*    var user = _repositoryManager.User.GetUserAsync(UserID, trackChanges);
-            if(user == null)
-            {
-                throw new Exception("User not found");
-            }*/
-
             var devices = await _repositoryManager.Device.GetAllDevicesAsync(userId, trackChanges);
             var devicesDtos = _mapper.Map<IEnumerable<DeviceDto>>(devices);
             return devicesDtos;
@@ -72,5 +67,17 @@ namespace Service
             await _repositoryManager.SaveAsync();
         }
 
+        public async Task UpdateDeviceAsync(Guid id, DeviceForUpdateDto deviceForUpdate, bool trackChanges)
+        {
+            var deviceEntity = await _repositoryManager.Device.GetDeviceAsync(id, trackChanges);
+            if (deviceEntity == null) 
+            { 
+                throw new DeviceNotFoundException(id); 
+            }
+             
+
+            _mapper.Map(deviceForUpdate, deviceEntity);
+            await _repositoryManager.SaveAsync();
+        }
     }
 }
