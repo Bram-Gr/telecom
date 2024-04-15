@@ -9,7 +9,7 @@ namespace Entities.Exceptions
     public class PhonePlanNotFoundException : Exception
     {
         public PhonePlanNotFoundException(Guid planId) 
-            : base($"The phone plane with the id: {planId} cannot be found")
+            : base($"The phone plan with the id: {planId} cannot be found for this user")
         {
         }
     }

@@ -40,8 +40,10 @@ namespace Service
         public async Task<IEnumerable<PhonePlan>> GetPhonePlansByUserIdAsync(Guid userId, bool trackChanges)
         {
             var user = await _repositoryManager.User.GetUserByIdAsync(userId, false);
-
-            /*var phonePlans = user.PhonePlans;*/
+            if (user == null)
+            {
+                throw new UserNotFoundException(userId);
+            }
 
             var phonePlans = await _repositoryManager.PhonePlan.GetPhonePlansByUserIdAsync(userId, trackChanges);
             return phonePlans;

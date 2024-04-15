@@ -38,9 +38,13 @@ namespace Service
             // Retrieve devices associated with the user
             var userDevices = await _repositoryManager.Device.GetAllDevicesAsync(device.UserID, false);
             var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, false);
-
+            // Check if the user has the phone plan
+            var userPlans = await _repositoryManager.PhonePlan.GetPhonePlansByUserIdAsync(device.UserID, false);
+            if (!userPlans.Any(plan => plan.Id == phonePlan.Id))
+            {
+                throw new PhonePlanNotFoundException(planId);
+            }
             // Count the number of devices associated with the user
-
             int userDeviceCount = userDevices.Count(); 
             if (userDeviceCount < phonePlan.DeviceLimit)
             {
@@ -61,8 +65,9 @@ namespace Service
             var device = await _repositoryManager.Device.GetDeviceAsync(deviceId, trackChanges);
             if (device == null)
             {
-                throw new Exception("Device not found");
+                throw new DeviceNotFoundException(deviceId);
             }
+
             _repositoryManager.Device.DeleteDevice(device);
             await _repositoryManager.SaveAsync();
         }

@@ -43,26 +43,26 @@ namespace Service
         }
 
        public async Task DeletePlanAsync(Guid planId, Guid userId)
-{
-    var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, true);
-    var user = await _repositoryManager.User.GetUserByIdAsync(userId, true);
+        {
+            var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, true);
+            var user = await _repositoryManager.User.GetUserByIdAsync(userId, true);
 
-    if (phonePlan == null || user == null)
-    {
-        throw new UserPhonePlanNotFoundException(planId, userId);
-    }
+            if (phonePlan == null || user == null)
+            {
+                throw new UserPhonePlanNotFoundException(planId, userId);
+            }
 
-    var userPhonePlan = await _repositoryManager.UserPhonePlan.GetUserPhonePlanAsync(userId, planId); // Ensure you're using asynchronous method to get the user phone plan
-    if (userPhonePlan != null)
-    {
-        _repositoryManager.UserPhonePlan.DeleteUserPhonePlan(userPhonePlan);
-        await _repositoryManager.SaveAsync();
-    }
-    else
-    {
-        throw new UserPhonePlanNotFoundException(planId, userId);
-    }
-}
+            var userPhonePlan = await _repositoryManager.UserPhonePlan.GetUserPhonePlanAsync(userId, planId); 
+            if (userPhonePlan != null)
+            {
+                _repositoryManager.UserPhonePlan.DeleteUserPhonePlan(userPhonePlan);
+                await _repositoryManager.SaveAsync();
+            }
+            else
+            {
+                throw new UserPhonePlanNotFoundException(planId, userId);
+            }
+        }
 
     }
 }
