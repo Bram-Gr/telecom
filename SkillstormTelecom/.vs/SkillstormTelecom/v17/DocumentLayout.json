@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{392F98A5-7130-4ABE-8A35-667B76ECB45F}|..\\Service\\Service.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\service\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}|..\\SkillstormTelecom.Presentation\\SkillstormTelecom.Presentation.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\skillstormtelecom.presentation\\controllers\\phoneplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{392F98A5-7130-4ABE-8A35-667B76ECB45F}|..\\Service\\Service.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\service\\phoneplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}|..\\SkillstormTelecom.Presentation\\SkillstormTelecom.Presentation.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\skillstormtelecom.presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}|..\\SkillstormTelecom.Presentation\\SkillstormTelecom.Presentation.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\skillstormtelecom.presentation\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{392F98A5-7130-4ABE-8A35-667B76ECB45F}|..\\Service\\Service.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -15,25 +18,28 @@
       "AbsoluteMoniker": "D:0:0:{392F98A5-7130-4ABE-8A35-667B76ECB45F}|..\\Service\\Service.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\service\\userphoneplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{392F98A5-7130-4ABE-8A35-667B76ECB45F}|..\\Service\\Service.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\service\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{392F98A5-7130-4ABE-8A35-667B76ECB45F}|..\\Service\\Service.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\service\\phoneplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{392F98A5-7130-4ABE-8A35-667B76ECB45F}|..\\Service\\Service.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\service\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}|..\\Entities\\Entities.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\entities\\exceptions\\phoneplannotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}|..\\Entities\\Entities.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\entities\\exceptions\\userphoneplannotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}|..\\Entities\\Entities.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\entities\\exceptions\\usernotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}|..\\Entities\\Entities.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\entities\\exceptions\\phoneplannotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}|..\\Entities\\Entities.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\entities\\exceptions\\devicenotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C4D5390-BC26-4F5B-B481-1AE2E5907F96}|..\\Entities\\Entities.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\entities\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{392F98A5-7130-4ABE-8A35-667B76ECB45F}|..\\Service\\Service.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\service\\servicemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75A1D1FE-B7C1-4984-8CA6-A03FC5D0162A}|..\\SkillstormTelecom.Presentation\\SkillstormTelecom.Presentation.csproj|c:\\users\\b93ra\\workspace\\telecomproject\\telecom\\skillstormtelecom.presentation\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\Migrations\\20240415210530_RemovedBillEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,7 +79,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -85,150 +91,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "DeviceController.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom.Presentation\\Controllers\\DeviceController.cs",
+              "RelativeDocumentMoniker": "..\\SkillstormTelecom.Presentation\\Controllers\\DeviceController.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom.Presentation\\Controllers\\DeviceController.cs*",
+              "RelativeToolTip": "..\\SkillstormTelecom.Presentation\\Controllers\\DeviceController.cs*",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAABkAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:55:23.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DeviceService.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\DeviceService.cs",
               "RelativeDocumentMoniker": "..\\Service\\DeviceService.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\DeviceService.cs*",
-              "RelativeToolTip": "..\\Service\\DeviceService.cs*",
-              "ViewState": "AQIAABsAAAAAAAAAAAA1wCgAAAAzAAAA",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\DeviceService.cs",
+              "RelativeToolTip": "..\\Service\\DeviceService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwBwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-15T21:22:23.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserPhonePlanService.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\UserPhonePlanService.cs",
-              "RelativeDocumentMoniker": "..\\Service\\UserPhonePlanService.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\UserPhonePlanService.cs",
-              "RelativeToolTip": "..\\Service\\UserPhonePlanService.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAA3wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:22:45.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\UserService.cs",
-              "RelativeToolTip": "..\\Service\\UserService.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAzwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:22:50.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PhonePlanService.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\PhonePlanService.cs",
-              "RelativeDocumentMoniker": "..\\Service\\PhonePlanService.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\PhonePlanService.cs*",
-              "RelativeToolTip": "..\\Service\\PhonePlanService.cs*",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCkAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:22:30.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserPhonePlanNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\UserPhonePlanNotFoundException.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\UserPhonePlanNotFoundException.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\UserPhonePlanNotFoundException.cs",
-              "RelativeToolTip": "..\\Entities\\Exceptions\\UserPhonePlanNotFoundException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:24:53.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UserNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\UserNotFoundException.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\UserNotFoundException.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\UserNotFoundException.cs",
-              "RelativeToolTip": "..\\Entities\\Exceptions\\UserNotFoundException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:24:49.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PhonePlanNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\PhonePlanNotFoundException.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\PhonePlanNotFoundException.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\PhonePlanNotFoundException.cs*",
-              "RelativeToolTip": "..\\Entities\\Exceptions\\PhonePlanNotFoundException.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:24:35.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DeviceNotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\DeviceNotFoundException.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\DeviceNotFoundException.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\DeviceNotFoundException.cs",
-              "RelativeToolTip": "..\\Entities\\Exceptions\\DeviceNotFoundException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:24:31.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NotFoundException.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\NotFoundException.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\NotFoundException.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\NotFoundException.cs",
-              "RelativeToolTip": "..\\Entities\\Exceptions\\NotFoundException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:24:30.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom.Presentation\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "..\\SkillstormTelecom.Presentation\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom.Presentation\\Controllers\\UserController.cs",
-              "RelativeToolTip": "..\\SkillstormTelecom.Presentation\\Controllers\\UserController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAqwEAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:09:39.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20240415210530_RemovedBillEntity.cs",
-              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\Migrations\\20240415210530_RemovedBillEntity.cs",
-              "RelativeDocumentMoniker": "Migrations\\20240415210530_RemovedBillEntity.cs",
-              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\Migrations\\20240415210530_RemovedBillEntity.cs",
-              "RelativeToolTip": "Migrations\\20240415210530_RemovedBillEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T21:05:30.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "ServiceManager.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\ServiceManager.cs",
               "RelativeDocumentMoniker": "..\\Service\\ServiceManager.cs",
@@ -241,7 +130,150 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom.Presentation\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\SkillstormTelecom.Presentation\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom.Presentation\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "..\\SkillstormTelecom.Presentation\\Controllers\\UserController.cs*",
+              "ViewState": "AQIAACIAAAAAAAAAAAAkwCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:09:39.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PhonePlanController.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom.Presentation\\Controllers\\PhonePlanController.cs",
+              "RelativeDocumentMoniker": "..\\SkillstormTelecom.Presentation\\Controllers\\PhonePlanController.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom.Presentation\\Controllers\\PhonePlanController.cs*",
+              "RelativeToolTip": "..\\SkillstormTelecom.Presentation\\Controllers\\PhonePlanController.cs*",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwDEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T22:00:49.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\UserService.cs",
+              "RelativeToolTip": "..\\Service\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:22:50.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PhonePlanService.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\PhonePlanService.cs",
+              "RelativeDocumentMoniker": "..\\Service\\PhonePlanService.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\PhonePlanService.cs",
+              "RelativeToolTip": "..\\Service\\PhonePlanService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwC0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:22:30.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserPhonePlanService.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\UserPhonePlanService.cs",
+              "RelativeDocumentMoniker": "..\\Service\\UserPhonePlanService.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service\\UserPhonePlanService.cs",
+              "RelativeToolTip": "..\\Service\\UserPhonePlanService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwCkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:22:45.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PhonePlanNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\PhonePlanNotFoundException.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\PhonePlanNotFoundException.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\PhonePlanNotFoundException.cs",
+              "RelativeToolTip": "..\\Entities\\Exceptions\\PhonePlanNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:24:35.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserPhonePlanNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\UserPhonePlanNotFoundException.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\UserPhonePlanNotFoundException.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\UserPhonePlanNotFoundException.cs",
+              "RelativeToolTip": "..\\Entities\\Exceptions\\UserPhonePlanNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:24:53.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\UserNotFoundException.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\UserNotFoundException.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\UserNotFoundException.cs",
+              "RelativeToolTip": "..\\Entities\\Exceptions\\UserNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:24:49.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeviceNotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\DeviceNotFoundException.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\DeviceNotFoundException.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\DeviceNotFoundException.cs",
+              "RelativeToolTip": "..\\Entities\\Exceptions\\DeviceNotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:24:31.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "..\\Entities\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:24:30.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240415210530_RemovedBillEntity.cs",
+              "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\Migrations\\20240415210530_RemovedBillEntity.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240415210530_RemovedBillEntity.cs",
+              "ToolTip": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\Migrations\\20240415210530_RemovedBillEntity.cs",
+              "RelativeToolTip": "Migrations\\20240415210530_RemovedBillEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T21:05:30.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "RepositoryContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\Migrations\\RepositoryContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\RepositoryContextModelSnapshot.cs",
@@ -254,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "20240412020746_FirstCreation.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\SkillstormTelecom\\Migrations\\20240412020746_FirstCreation.cs",
               "RelativeDocumentMoniker": "Migrations\\20240412020746_FirstCreation.cs",
@@ -267,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "IServiceManager.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Service.Contracts\\IServiceManager.cs",
               "RelativeDocumentMoniker": "..\\Service.Contracts\\IServiceManager.cs",
@@ -280,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UserPhonePlanRepository.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Repository\\UserPhonePlanRepository.cs",
               "RelativeDocumentMoniker": "..\\Repository\\UserPhonePlanRepository.cs",
@@ -293,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Repository\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "..\\Repository\\RepositoryBase.cs",
@@ -306,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "RepositoryContext.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Repository\\RepositoryContext.cs",
               "RelativeDocumentMoniker": "..\\Repository\\RepositoryContext.cs",
@@ -319,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "RepositoryManager.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Repository\\RepositoryManager.cs",
               "RelativeDocumentMoniker": "..\\Repository\\RepositoryManager.cs",
@@ -332,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "IRepositoryManager.cs",
               "DocumentMoniker": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Contracts\\IRepositoryManager.cs",
               "RelativeDocumentMoniker": "..\\Contracts\\IRepositoryManager.cs",

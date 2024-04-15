@@ -11,7 +11,7 @@ using Shared.DataTransferObjects;
 
 namespace SkillstormTelecom.Presentation.Controllers
 {
-    [Route("api/device/{deviceId:guid}")]
+    [Route("api/[controller]/{deviceId:guid}")]
     [ApiController]
     public class DeviceController: ControllerBase
     {
@@ -35,6 +35,6 @@ namespace SkillstormTelecom.Presentation.Controllers
 
             await _service.Device.UpdateDeviceAsync(deviceId, device, trackChanges: true);
             return NoContent();
-        }   
+        }
     }
 }

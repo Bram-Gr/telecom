@@ -2,7 +2,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.DeviceController",
     "Method": "DeleteDevice",
-    "RelativePath": "api/device/{deviceId}",
+    "RelativePath": "api/Device/{deviceId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.DeviceController",
     "Method": "UpdateDevice",
-    "RelativePath": "api/device/{deviceId}",
+    "RelativePath": "api/Device/{deviceId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -39,7 +39,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.PhonePlanController",
     "Method": "GetPhonePlans",
-    "RelativePath": "api/phoneplan",
+    "RelativePath": "api/PhonePlan",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -49,7 +49,7 @@
   {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.PhonePlanController",
     "Method": "AddDeviceByPlan",
-    "RelativePath": "api/phoneplan/{PlanId}/device",
+    "RelativePath": "api/PhonePlan/{PlanId}/device",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -61,6 +61,48 @@
       },
       {
         "Name": "PlanId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.PhonePlanController",
+    "Method": "AddPlanByUser",
+    "RelativePath": "api/PhonePlan/{planId}/user/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "planId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.PhonePlanController",
+    "Method": "DeletePlanByUser",
+    "RelativePath": "api/PhonePlan/{planId}/user/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "planId",
         "Type": "System.Guid",
         "IsRequired": true
       }
@@ -125,48 +167,6 @@
     "Parameters": [
       {
         "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
-    "Method": "AddPlanByUser",
-    "RelativePath": "api/User/{userId}/phoneplan/{planId}",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "planId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
-    "Method": "DeletePlanByUser",
-    "RelativePath": "api/User/{userId}/phoneplan/{planId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "planId",
         "Type": "System.Guid",
         "IsRequired": true
       }

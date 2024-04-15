@@ -11,7 +11,7 @@ namespace SkillstormTelecom.Presentation.Controllers
 
 { 
 
-    [Route("api/phoneplan")]
+    [Route("api/[controller]")]
     [ApiController]
     public class PhonePlanController: ControllerBase
     {
@@ -35,6 +35,28 @@ namespace SkillstormTelecom.Presentation.Controllers
 
             var createdDevice = await _service.Device.addDeviceByPlanAsync(device, PlanId);
             return CreatedAtRoute( new { id = createdDevice.Id }, createdDevice);
+        }
+
+        [HttpPost("{planId:guid}/user/{userId:guid}", Name = "planByUserId")]
+        public async Task<IActionResult> AddPlanByUser(Guid userId, Guid planId)
+        {
+            if (planId == null)
+                return BadRequest("Plan object is null");
+
+            await _service.UserPhonePlan.AddPlanAsync(planId, userId);
+            return Created();
+        }
+
+        [HttpDelete("{planId:guid}/user/{userId:guid}")]
+        public async Task<IActionResult> DeletePlanByUser(Guid userId, Guid planId)
+        {
+
+            Console.WriteLine(planId);
+            if (planId == null)
+                return BadRequest("Plan object is null");
+
+            await _service.UserPhonePlan.DeletePlanAsync(planId, userId);
+            return NoContent();
         }
     }
 }

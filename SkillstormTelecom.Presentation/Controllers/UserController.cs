@@ -37,29 +37,6 @@ namespace SkillstormTelecom.Presentation.Controllers
         }
 
 
-        [HttpPost("{userId:guid}/phoneplan/{planId:guid}", Name = "planByUserId")]
-        public async Task<IActionResult> AddPlanByUser(Guid userId, Guid planId)
-        {
-            if (planId == null)
-                return BadRequest("Plan object is null");
-
-            await _service.UserPhonePlan.AddPlanAsync(planId, userId);
-            return Created();
-        }
-
-        [HttpDelete("{userId:guid}/phoneplan/{planId:guid}")]
-        public async Task<IActionResult> DeletePlanByUser(Guid userId,Guid planId)
-        {
-         
-            Console.WriteLine(planId);
-            if (planId == null)
-                return BadRequest("Plan object is null");
-
-            await _service.UserPhonePlan.DeletePlanAsync(planId, userId);
-            return NoContent();
-        }
-
-
         [HttpPost(Name = "CreateUser")]
         public async Task<IActionResult> CreateUser([FromBody] UserForCreationDto user)
         {
