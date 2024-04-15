@@ -19,9 +19,7 @@ namespace Repository
         }
         public DbSet<User> Users { get; set; }
         public DbSet<PhonePlan> PhonePlans { get; set; }
-  /*      public DbSet<UserPhonePlan> UserPhonePlans { get; set; }*/
         public DbSet<Device> Devices { get; set; }
-        public DbSet<Bill> Bills { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,9 +35,9 @@ namespace Repository
                 .UsingEntity<UserPhonePlan>();
 
             modelBuilder.Entity<PhonePlan>()
-           .HasMany(u => u.Users)
-           .WithMany(up => up.PhonePlans)
-           .UsingEntity<UserPhonePlan>();
+                .HasMany(u => u.Users)
+                .WithMany(up => up.PhonePlans)
+                .UsingEntity<UserPhonePlan>();
 
 
             modelBuilder.Entity<UserPhonePlan>(model =>
@@ -51,11 +49,10 @@ namespace Repository
 
 
             modelBuilder.ApplyConfiguration(new UserConfiguration());
-/*            modelBuilder.ApplyConfiguration(new UserPhonePlanConfiguration());*/
+/*           modelBuilder.ApplyConfiguration(new UserPhonePlanConfiguration());*/
             modelBuilder.ApplyConfiguration(new PhonePlanConfiguation());
-         modelBuilder.ApplyConfiguration(new DeviceConfiguration());
-         modelBuilder.ApplyConfiguration(new BillConfiguration());
-/*        modelBuilder.ApplyConfiguration(new RoleConfiguration());*/
+            modelBuilder.ApplyConfiguration(new DeviceConfiguration());
+/*           modelBuilder.ApplyConfiguration(new RoleConfiguration());*/
 
         }
     }

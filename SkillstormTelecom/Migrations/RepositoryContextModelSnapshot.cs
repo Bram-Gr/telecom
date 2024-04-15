@@ -22,63 +22,6 @@ namespace SkillstormTelecom.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Entities.Bill", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("BillID");
-
-                    b.Property<string>("BillingAddress")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("BillingAddress");
-
-                    b.Property<DateTime>("BillingDate")
-                        .HasColumnType("datetime2")
-                        .HasColumnName("BillingDate");
-
-                    b.Property<string>("OtherBillDetails")
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("Other bill details");
-
-                    b.Property<double>("TotalAmount")
-                        .HasColumnType("float")
-                        .HasColumnName("TotalAmount");
-
-                    b.Property<Guid>("UserID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Bills");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("9f6943a3-4f5e-471c-9b6c-a427c8bf4b20"),
-                            BillingDate = new DateTime(2024, 4, 11, 22, 7, 45, 919, DateTimeKind.Local).AddTicks(5948),
-                            OtherBillDetails = "Bill for the month of January",
-                            TotalAmount = 100.0,
-                            UserID = new Guid("8a55f01b-1cd0-4848-b7ae-86c40b1ad289")
-                        },
-                        new
-                        {
-                            Id = new Guid("46d99311-79e0-46b2-ba06-d50480a7b1c3"),
-                            BillingDate = new DateTime(2024, 4, 11, 22, 7, 45, 919, DateTimeKind.Local).AddTicks(6007),
-                            OtherBillDetails = "Bill for the month of January",
-                            TotalAmount = 75.0,
-                            UserID = new Guid("12ae765a-189b-4194-81e6-0b4046f32853")
-                        },
-                        new
-                        {
-                            Id = new Guid("f8ff0b05-a399-4629-ace4-edf4ea173ee1"),
-                            BillingDate = new DateTime(2024, 4, 11, 22, 7, 45, 919, DateTimeKind.Local).AddTicks(6012),
-                            OtherBillDetails = "Bill for the month of January",
-                            TotalAmount = 25.0,
-                            UserID = new Guid("2a4425e8-f6bf-4d34-9c8d-5236751f7635")
-                        });
-                });
-
             modelBuilder.Entity("Entities.Device", b =>
                 {
                     b.Property<Guid>("Id")

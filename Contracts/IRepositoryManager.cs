@@ -12,7 +12,6 @@ namespace Contracts
         IUserRepository User { get; }
         IPhonePlanRepository PhonePlan { get; }
         IDeviceRepository Device { get; }
-        IBillRepository Bill { get; }
         Task SaveAsync();
     }
 }

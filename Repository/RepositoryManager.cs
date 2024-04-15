@@ -12,7 +12,6 @@ namespace Repository
         private readonly RepositoryContext _repositoryContext;
         private readonly Lazy<IDeviceRepository> _deviceRepository;
         private readonly Lazy<IUserRepository> _userRepository;
-        private readonly Lazy<IBillRepository> _billRepository;
         private readonly Lazy<IUserPhonePlanRepository> _userPhonePlanRepository;
         private readonly Lazy<IPhonePlanRepository> _phonePlanRepository;
 
@@ -21,20 +20,14 @@ namespace Repository
             _repositoryContext = repositoryContext;
             _deviceRepository = new Lazy<IDeviceRepository>(() => new DeviceRepository(_repositoryContext));
             _userRepository = new Lazy<IUserRepository>(() => new UserRepository(_repositoryContext));
-            _billRepository = new Lazy<IBillRepository>(() => new BillRepository(_repositoryContext));
             _userPhonePlanRepository = new Lazy<IUserPhonePlanRepository>(() => new UserPhonePlanRepository(_repositoryContext));
             _phonePlanRepository = new Lazy<IPhonePlanRepository>(() => new PhonePlanRepository(_repositoryContext));
         }   
 
         public IDeviceRepository Device => _deviceRepository.Value;
         public IUserRepository User => _userRepository.Value;
-        public IBillRepository Bill => _billRepository.Value;
         public IUserPhonePlanRepository UserPhonePlan => _userPhonePlanRepository.Value;
-
-
         public IPhonePlanRepository PhonePlan => _phonePlanRepository.Value;
-
-
         public async Task SaveAsync () => await _repositoryContext.SaveChangesAsync();
 
     }
