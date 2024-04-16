@@ -54,8 +54,8 @@ namespace SkillstormTelecom.Extensions
         {
             s.SwaggerDoc("v1", new OpenApiInfo { Title = "SkillstormTelecom", Version = "v1" });
         });
-        /*
-                public static void ConfigureSwagger(this IServiceCollection services)
+
+    /*    public static void ConfigureSwagger(this IServiceCollection services)
                 {
                     services.AddSwaggerGen(s =>
                     {
@@ -63,7 +63,7 @@ namespace SkillstormTelecom.Extensions
 
                         var xmlFile = $"{typeof(Presentation.AssemblyReference).Assembly.GetName().Name}.xml";
                         var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                     *//*   s.IncludeXmlComments(xmlPath);*//*
+                     //*   s.IncludeXmlComments(xmlPath);*//*
 
                         s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                         {
@@ -132,11 +132,11 @@ namespace SkillstormTelecom.Extensions
                                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
                             };
                         });
-                }
+                }*/
 
                 public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) =>
                     services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
-        */
+        
     }
     
 }

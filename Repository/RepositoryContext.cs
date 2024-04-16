@@ -52,7 +52,7 @@ namespace Repository
 /*           modelBuilder.ApplyConfiguration(new UserPhonePlanConfiguration());*/
             modelBuilder.ApplyConfiguration(new PhonePlanConfiguation());
             modelBuilder.ApplyConfiguration(new DeviceConfiguration());
-/*           modelBuilder.ApplyConfiguration(new RoleConfiguration());*/
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
 
         }
     }
