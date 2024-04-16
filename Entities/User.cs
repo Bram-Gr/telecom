@@ -10,9 +10,9 @@ using Microsoft.AspNetCore.Identity;
 namespace Entities
 {
     public class User
-    /*    : IdentityUser*/
+        : IdentityUser
     {
-        [Column("UserId")]
+ /*       [Column("UserId")]
         public Guid Id { get; set; }
        
         [Required(ErrorMessage="Username is required.")]
@@ -30,14 +30,14 @@ namespace Entities
         [DataType(DataType.EmailAddress)]
         [MaxLength(50, ErrorMessage="Email must be less than 50 characters.")]
         [Column("Email")]
-        public string? Email { get; set; }
+        public string? Email { get; set; }*/
 
         public List<PhonePlan> PhonePlans { get; } = [];
 
 
 
-   /*     public string? RefreshToken { get; set; }
-        public DateTime RefreshTokenExpiryTime { get; set; }*/
+        public string? RefreshToken { get; set; }
+        public DateTime RefreshTokenExpiryTime { get; set; }
 
     }
 }

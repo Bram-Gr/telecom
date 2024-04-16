@@ -48,7 +48,7 @@ namespace Repository
 
 
 
-            modelBuilder.ApplyConfiguration(new UserConfiguration());
+          /*  modelBuilder.ApplyConfiguration(new UserConfiguration());*/
 /*           modelBuilder.ApplyConfiguration(new UserPhonePlanConfiguration());*/
             modelBuilder.ApplyConfiguration(new PhonePlanConfiguation());
             modelBuilder.ApplyConfiguration(new DeviceConfiguration());

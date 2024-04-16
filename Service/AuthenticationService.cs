@@ -11,6 +11,7 @@ using Entities.ConfigurationModels;
 using Microsoft.Extensions.Options;
 using Entities;
 using Entities.Exceptions;
+using Service.Contracts;
 
 namespace Service
 {
@@ -36,7 +37,7 @@ namespace Service
             _jwtConfiguration = config.Value;
         }
 
-      /*  public async Task<TokenDto> CreateToken(bool populateExp)
+        public async Task<TokenDto> CreateToken(bool populateExp)
         {
             var signingCredentials = GetSigningCredentials();
             var claims = await GetClaims();
@@ -54,9 +55,9 @@ namespace Service
             var accessToken = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
 
             return new TokenDto(accessToken, refreshToken);
-        }*/
+        }
 
-    /*    public async Task<TokenDto> RefreshToken(TokenDto tokenDto)
+        public async Task<TokenDto> RefreshToken(TokenDto tokenDto)
         {
             var principal = GetPrincipalFromExpiredToken(tokenDto.AccessToken);
             var user = await _userManager.FindByNameAsync(principal.Identity.Name);
@@ -77,7 +78,7 @@ namespace Service
                 await _userManager.AddToRolesAsync(user, userForRegistration.Roles);
 
             return result;
-        }*/
+        }
 
         public async Task<bool> ValidateUser(UserForAuthenticationDto userForAuthentication)
         {
@@ -97,7 +98,7 @@ namespace Service
             return new SigningCredentials(secret, SecurityAlgorithms.HmacSha256);
         }
 
-    /*    private async Task<List<Claim>> GetClaims()
+        private async Task<List<Claim>> GetClaims()
         {
             var claims = new List<Claim>
             {
@@ -112,7 +113,7 @@ namespace Service
             }
 
             return claims;
-        }*/
+        }
 
         private JwtSecurityToken GenerateTokenOptions(SigningCredentials signingCredentials, List<Claim> claims)
         {

@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "ContosoUniversity.Presentation.Controllers.AuthenticationController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/Authentication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userForRegistration",
+        "Type": "Shared.DataTransferObjects.UserForRegistrationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContosoUniversity.Presentation.Controllers.AuthenticationController",
+    "Method": "Authenticate",
+    "RelativePath": "api/Authentication/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userForAuthentication",
+        "Type": "Shared.DataTransferObjects.UserForAuthenticationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SkillstormTelecom.Presentation.Controllers.DeviceController",
     "Method": "DeleteDevice",
     "RelativePath": "api/Device/{deviceId}",
@@ -104,6 +136,22 @@
       {
         "Name": "planId",
         "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ContosoUniversity.Presentation.Controllers.TokenController",
+    "Method": "Refresh",
+    "RelativePath": "api/Token/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenDto",
+        "Type": "Shared.DataTransferObjects.TokenDto",
         "IsRequired": true
       }
     ],

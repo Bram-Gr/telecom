@@ -49,13 +49,13 @@ namespace SkillstormTelecom.Extensions
             services.AddDbContext<RepositoryContext>(options =>
                            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
-        public static void ConfigureSwagger(this IServiceCollection services) =>
+     /*   public static void ConfigureSwagger(this IServiceCollection services) =>
         services.AddSwaggerGen(s =>
         {
             s.SwaggerDoc("v1", new OpenApiInfo { Title = "SkillstormTelecom", Version = "v1" });
-        });
+        });*/
 
-    /*    public static void ConfigureSwagger(this IServiceCollection services)
+       public static void ConfigureSwagger(this IServiceCollection services)
                 {
                     services.AddSwaggerGen(s =>
                     {
@@ -132,7 +132,7 @@ namespace SkillstormTelecom.Extensions
                                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
                             };
                         });
-                }*/
+                }
 
                 public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) =>
                     services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
