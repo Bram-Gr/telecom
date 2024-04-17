@@ -25,5 +25,8 @@ namespace Repository
         
 
         public void DeleteDevice(Device device) => Delete(device);
+
+        public async Task<IEnumerable<Device>> GetDevicesByPhonePlanAsync(Guid userID, Guid phonePlanID, bool trackChanges)=>
+            await FindByCondition(d => d.UserID.Equals(userID) && d.PhonePlanID.Equals(phonePlanID), trackChanges).ToListAsync();
     }
 }

@@ -13,5 +13,6 @@ namespace Contracts
         void CreateDevice(Device device);
         void DeleteDevice(Device device);
         Task<Device> GetDeviceAsync(Guid deviceId, bool trackChanges);
+        Task<IEnumerable<Device>> GetDevicesByPhonePlanAsync(Guid userID, Guid phonePlanID, bool trackChanges);
     }
 }

@@ -36,7 +36,7 @@ namespace Service
         {
 
             // Retrieve devices associated with the user
-            var userDevices = await _repositoryManager.Device.GetAllDevicesAsync(device.UserID, false);
+            var userDevices = await _repositoryManager.Device.GetDevicesByPhonePlanAsync(device.UserID, planId, false);
             var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(planId, false);
             // Check if the user has the phone plan
             var userPlans = await _repositoryManager.PhonePlan.GetPhonePlansByUserIdAsync(device.UserID, false);
@@ -44,7 +44,7 @@ namespace Service
             {
                 throw new PhonePlanNotFoundException(planId);
             }
-            // Count the number of devices associated with the user
+            // Count the number of devices associated with the user by the phone plan
             int userDeviceCount = userDevices.Count(); 
             if (userDeviceCount < phonePlan.DeviceLimit)
             {
@@ -77,14 +77,35 @@ namespace Service
         public async Task UpdateDeviceAsync(Guid id, DeviceForUpdateDto deviceForUpdate, bool trackChanges)
         {
             var deviceEntity = await _repositoryManager.Device.GetDeviceAsync(id, trackChanges);
-            if (deviceEntity == null) 
-            { 
-                throw new DeviceNotFoundException(id); 
-            }
-             
 
-            _mapper.Map(deviceForUpdate, deviceEntity);
-            await _repositoryManager.SaveAsync();
+            if (deviceEntity == null)
+            {
+                throw new DeviceNotFoundException(id);
+            }
+
+            var userDevicesForPlan = await _repositoryManager.Device.GetDevicesByPhonePlanAsync(deviceEntity.UserID, deviceEntity.PhonePlanID, false);
+            var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(deviceForUpdate.PhonePlanID, false);
+
+            if (phonePlan == null)
+            {
+                throw new Exception("Associated phone plan not found.");
+            }
+
+            int userDeviceCountForPlan = userDevicesForPlan.Count();
+
+            if (userDeviceCountForPlan <= phonePlan.DeviceLimit)
+            {
+                _mapper.Map(deviceForUpdate, deviceEntity);
+                await _repositoryManager.SaveAsync();
+            }
+            else
+            {
+                throw new Exception("Exceeded Device Limit for that plan");
+            }
         }
+
     }
+
+
+
 }
