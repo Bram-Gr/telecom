@@ -46,6 +46,15 @@ namespace SkillstormTelecom.Presentation.Controllers
             var createdUser = await _service.User.CreateUserAsync(user);
             return CreatedAtRoute("CreateUser", new { Id = createdUser.Id }, createdUser);
         }
+        [HttpPost("login")]
+        public async Task<IActionResult> Authenticate([FromBody]UserDto user)
+        {
+            if (user == null)
+                return BadRequest("User object is null");
+
+            var userToLogin = await _service.User.getUserByUsernameAndPassword(user, trackChanges: false);
+            return Ok(userToLogin);
+        }
 
     }
 }

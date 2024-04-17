@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Entities.csproj"
+              },
+              "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Shared\\Shared.csproj"
               }
             }
           }

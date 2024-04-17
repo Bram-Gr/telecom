@@ -18,3 +18,5 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\Repository\obj\Debug\net8.0\refi
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Repository\obj\Debug\net8.0\Repository.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Repository\obj\Debug\net8.0\Repository.genruntimeconfig.cache
 C:\Users\b93ra\Workspace\TelecomProject\telecom\Repository\obj\Debug\net8.0\ref\Repository.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Repository\bin\Debug\net8.0\Shared.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\Repository\bin\Debug\net8.0\Shared.pdb

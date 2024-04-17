@@ -172,5 +172,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SkillstormTelecom.Presentation.Controllers.UserController",
+    "Method": "Authenticate",
+    "RelativePath": "api/User/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Shared.DataTransferObjects.UserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

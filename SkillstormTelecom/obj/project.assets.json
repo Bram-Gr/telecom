@@ -1795,7 +1795,8 @@
         "dependencies": {
           "Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3"
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
+          "Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Contracts.dll": {}

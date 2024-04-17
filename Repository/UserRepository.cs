@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Entities;
 using Contracts;
 using Microsoft.EntityFrameworkCore;
+using Shared.DataTransferObjects;
 
 namespace Repository
 {
@@ -24,6 +25,20 @@ namespace Repository
 
         public async Task<User> GetUserByIdAsync(Guid id, bool trackChanges)=>
                     await FindByCondition(u => u.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
+
+        public async Task<UserDto> GetUserByNameandPass(UserDto user, bool trackChanges) =>
+         /*   await FindByCondition(u => u.Username.Equals(user.Username)
+               && u.Password.Equals(user.Password), trackChanges).SingleOrDefaultAsync();*/
+         await FindByCondition(u => u.Username.Equals(user.Username)
+                       && u.Password.Equals(user.Password) 
+                  || u.Email.Equals(user.Email) && u.Password.Equals(user.Password), 
+                    trackChanges).Select(u => new UserDto
+                       {
+                   Id = u.Id,
+                   Username = u.Username,
+                   Password = u.Password,
+                   Email = u.Email
+               }).SingleOrDefaultAsync();
     }
   
 }

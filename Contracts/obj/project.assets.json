@@ -1599,6 +1599,19 @@
         "runtime": {
           "bin/placeholder/Entities.dll": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -4289,6 +4302,11 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4297,7 +4315,8 @@
       "Microsoft.EntityFrameworkCore >= 8.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.3",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.3"
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.3",
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4329,6 +4348,9 @@
           "projectReferences": {
             "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\b93ra\\Workspace\\TelecomProject\\telecom\\Shared\\Shared.csproj"
             }
           }
         }

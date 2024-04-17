@@ -16,3 +16,5 @@ C:\Users\b93ra\Workspace\TelecomProject\telecom\LoggerManager.cs\obj\Debug\net8.
 C:\Users\b93ra\Workspace\TelecomProject\telecom\LoggerManager.cs\obj\Debug\net8.0\refint\LoggerService.dll
 C:\Users\b93ra\Workspace\TelecomProject\telecom\LoggerManager.cs\obj\Debug\net8.0\LoggerService.pdb
 C:\Users\b93ra\Workspace\TelecomProject\telecom\LoggerManager.cs\obj\Debug\net8.0\ref\LoggerService.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\LoggerManager.cs\bin\Debug\net8.0\Shared.dll
+C:\Users\b93ra\Workspace\TelecomProject\telecom\LoggerManager.cs\bin\Debug\net8.0\Shared.pdb

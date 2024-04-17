@@ -32,5 +32,11 @@ namespace Service
             var userToReturn = _mapper.Map<UserDto>(userEntity);
             return userToReturn;
         }
+
+        public async Task<UserDto> getUserByUsernameAndPassword(UserDto user, bool trackChanges)
+        {
+            var userToReturn = await _repositoryManager.User.GetUserByNameandPass(user, false);
+            return userToReturn;
+        }
     }
 }

@@ -10,5 +10,6 @@ namespace Service.Contracts
     public interface IUserService
     {
         Task<UserDto> CreateUserAsync(UserForCreationDto user);
+        Task<UserDto> getUserByUsernameAndPassword(UserDto user, bool trackChanges);
     }
 }
