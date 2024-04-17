@@ -48,9 +48,11 @@ namespace Service
             int userDeviceCount = userDevices.Count(); 
             if (userDeviceCount < phonePlan.DeviceLimit)
             {
+
                 var deviceEntity = _mapper.Map<Device>(device);
+                deviceEntity.PhonePlanID = planId;
                 _repositoryManager.Device.CreateDevice(deviceEntity);
-                await _repositoryManager.SaveAsync();
+                await _repositoryManager.SaveAsync();             
                 var deviceToReturn = _mapper.Map<DeviceDto>(deviceEntity);
                 return deviceToReturn;
             }

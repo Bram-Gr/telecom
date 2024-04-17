@@ -9,7 +9,7 @@ namespace SkillstormTelecom
     {
         public MappingProfile()
         {
-            CreateMap<Device, DeviceDto>();
+            CreateMap<Device, DeviceDto>().ReverseMap();
             CreateMap<DeviceForCreationDto, Device>();
             CreateMap<User, UserDto>();
             CreateMap<PhonePlanDto, PhonePlan>();

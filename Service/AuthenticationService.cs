@@ -11,6 +11,7 @@ using Entities.ConfigurationModels;
 using Microsoft.Extensions.Options;
 using Entities;
 using Entities.Exceptions;
+using Service.Contracts;
 
 namespace Service
 {
@@ -164,6 +165,21 @@ namespace Service
             }
 
             return principal;
+        }
+
+        public Task<IdentityResult> RegisterUser(UserForRegistrationDto userForRegistration)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<TokenDto> CreateToken(bool populateExp)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<TokenDto> RefreshToken(TokenDto tokenDto)
+        {
+            throw new NotImplementedException();
         }
     }
 }
