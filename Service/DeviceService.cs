@@ -83,17 +83,21 @@ namespace Service
                 throw new DeviceNotFoundException(id);
             }
 
-            var userDevicesForPlan = await _repositoryManager.Device.GetDevicesByPhonePlanAsync(deviceEntity.UserID, deviceEntity.PhonePlanID, false);
-            var phonePlan = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(deviceForUpdate.PhonePlanID, false);
-
-            if (phonePlan == null)
+            var userDevicesForPlanUpdatingTo = await _repositoryManager.Device.GetDevicesByPhonePlanAsync(deviceEntity.UserID, deviceForUpdate.PhonePlanID, false);
+            var userDevvicesForPlanUpdatingFrom = await _repositoryManager.Device.GetDevicesByPhonePlanAsync(deviceEntity.UserID, deviceEntity.PhonePlanID, false);
+            var phonePlanUpdatingTo = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(deviceForUpdate.PhonePlanID, false);
+            var phonePlanUpdatingFrom = await _repositoryManager.PhonePlan.GetPhonePlanByIdAsync(deviceEntity.PhonePlanID, false);
+            if (phonePlanUpdatingTo == null)
             {
                 throw new Exception("Associated phone plan not found.");
             }
 
-            int userDeviceCountForPlan = userDevicesForPlan.Count();
+            int userDeviceCountForPlanUpdatingTo = userDevicesForPlanUpdatingTo.Count();
+            int userDeviceCountForPlanUpdatingFrom = userDevvicesForPlanUpdatingFrom.Count();
 
-            if (userDeviceCountForPlan <= phonePlan.DeviceLimit)
+            if (userDeviceCountForPlanUpdatingTo <= phonePlanUpdatingTo.DeviceLimit &&
+                (userDeviceCountForPlanUpdatingFrom < phonePlanUpdatingFrom.DeviceLimit ||
+                   deviceEntity.PhonePlanID == deviceForUpdate.PhonePlanID))
             {
                 _mapper.Map(deviceForUpdate, deviceEntity);
                 await _repositoryManager.SaveAsync();
