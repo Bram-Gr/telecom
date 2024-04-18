@@ -95,8 +95,8 @@ namespace Service
             int userDeviceCountForPlanUpdatingTo = userDevicesForPlanUpdatingTo.Count();
             int userDeviceCountForPlanUpdatingFrom = userDevvicesForPlanUpdatingFrom.Count();
 
-            if (userDeviceCountForPlanUpdatingTo <= phonePlanUpdatingTo.DeviceLimit &&
-                (userDeviceCountForPlanUpdatingFrom < phonePlanUpdatingFrom.DeviceLimit ||
+            if (userDeviceCountForPlanUpdatingFrom <= phonePlanUpdatingFrom.DeviceLimit &&
+                (userDeviceCountForPlanUpdatingTo < phonePlanUpdatingTo.DeviceLimit ||
                    deviceEntity.PhonePlanID == deviceForUpdate.PhonePlanID))
             {
                 _mapper.Map(deviceForUpdate, deviceEntity);
